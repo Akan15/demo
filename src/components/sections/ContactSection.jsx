@@ -8,14 +8,11 @@ const ContactSection = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
-  // Test function
-  const testClick = () => {
-    alert('Test button clicked!');
-  };
+ 
 
-  useEffect(() => {
-    alert('ContactSection loaded!');
-  }, []);
+  // useEffect(() => {
+  //   alert('ContactSection loaded!');
+  // }, []);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -95,10 +92,7 @@ const ContactSection = () => {
         <h2>{t.contactTitle}</h2>
         <p className="section-subtitle">{t.contactSubtitle}</p>
 
-        {/* Test button */}
-        <button onClick={testClick} style={{ marginBottom: '20px' }}>
-          Test Button
-        </button>
+    
 
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">

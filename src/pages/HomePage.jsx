@@ -21,7 +21,7 @@ const HomePage = () => {
       {/* <TeamSection /> */}
       <StatisticsSection />
       <TopServicesSection />
-      {/* <ContactSection /> */}
+      <ContactSection />
     </div>
   );
 };
