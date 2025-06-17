@@ -91,9 +91,6 @@ const ContactSection = () => {
       <div className="container">
         <h2>{t.contactTitle}</h2>
         <p className="section-subtitle">{t.contactSubtitle}</p>
-
-    
-
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">{t.nameLabel}</label>

@@ -34,6 +34,7 @@
   font-weight: 500;
   color: #333;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .faq-question:hover {
@@ -48,7 +49,14 @@
 .arrow {
   transition: transform 0.3s ease;
   color: #007bff;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
 .faq-question.expanded .arrow {
@@ -98,6 +106,12 @@ h2{
   .faq-answer p {
     font-size: 0.95rem;
   }
+
+  .arrow {
+    font-size: 1.1rem;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Mobile styles */
@@ -129,6 +143,9 @@ h2{
   }
 
   .arrow {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    width: 18px;
+    height: 18px;
+    margin-left: 0.75rem;
   }
 } 
