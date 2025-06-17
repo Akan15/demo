@@ -60,6 +60,7 @@ body {
   gap: 1.5rem;
   align-items: center;
   margin: 0 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link {
@@ -183,12 +184,17 @@ body {
     margin-right: 1rem;
   }
 
+  .mobile-menu-button span {
+    transition: transform 0.3s ease-in-out,
+                opacity 0.2s ease-in-out,
+                background-color 0.3s ease;
+  }
+
   .mobile-menu-button:hover span {
     background-color: #007bff;
   }
 
   .nav {
-    display: none;
     position: fixed;
     top: 56px;
     left: 0;
@@ -204,15 +210,21 @@ body {
     gap: 1.5rem;
     z-index: 999;
     overflow-y: auto;
-    transform: translateY(-100%);
+    visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out,
+                visibility 0s linear 0.3s;
   }
 
   .nav.active {
-    display: flex;
-    transform: translateY(0);
+    visibility: visible;
     opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out,
+                visibility 0s linear;
   }
 
   .nav-link {
@@ -221,7 +233,25 @@ body {
     font-size: 1.1rem;
     text-align: center;
     transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
   }
+
+  .nav.active .nav-link {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+  }
+
+  /* Stagger the animation for each nav link */
+  .nav.active .nav-link:nth-child(1) { transition-delay: 0.1s; }
+  .nav.active .nav-link:nth-child(2) { transition-delay: 0.15s; }
+  .nav.active .nav-link:nth-child(3) { transition-delay: 0.2s; }
+  .nav.active .nav-link:nth-child(4) { transition-delay: 0.25s; }
+  .nav.active .nav-link:nth-child(5) { transition-delay: 0.3s; }
+  .nav.active .nav-link:nth-child(6) { transition-delay: 0.35s; }
+  .nav.active .nav-link:nth-child(7) { transition-delay: 0.4s; }
 
   .nav-link::after {
     content: '';
@@ -244,9 +274,38 @@ body {
     background-color: rgba(0, 123, 255, 0.05);
   }
 
+  .mobile-menu-button.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.2s ease-in-out,
+                transform 0.2s ease-in-out;
+  }
+
+  .mobile-menu-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 19px;
+    transition: transform 0.3s ease-in-out;
+  }
+
   .mobile-language-selector {
     display: block;
     margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+  }
+
+  .nav.active .mobile-language-selector {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.45s;
   }
 
   .desktop-language-selector {
