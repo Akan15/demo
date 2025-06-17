@@ -16,10 +16,17 @@ html, body {
 .header {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   width: 100%;
+}
+
+/* Add padding to body to prevent content from being hidden under fixed header */
+body {
+  padding-top: 60px; /* Adjust this value based on your header height */
 }
 
 .header .container {
@@ -107,10 +114,13 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 56px; /* Adjust for smaller header on mobile */
+  }
+
   .header {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
 
   .header .container {
@@ -155,17 +165,18 @@ html, body {
   .nav {
     display: none;
     position: fixed;
-    top: 0;
+    top: 56px; /* Match the header height */
     left: 0;
     right: 0;
     bottom: 0;
     background-color: white;
     flex-direction: column;
-    width: 100%; /* Исправлено: было 100vw */
+    width: 100%;
     margin: 0;
-    padding: 5rem 0 2rem;
+    padding: 1rem 0;
     gap: 1.5rem;
-    z-index: 1;
+    z-index: 999;
+    overflow-y: auto;
   }
 
   .nav.active {
@@ -191,6 +202,10 @@ html, body {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding-top: 52px; /* Adjust for even smaller header on mobile */
+  }
+
   .header .container {
     padding: 0;
   }
@@ -204,7 +219,7 @@ html, body {
   }
 
   .nav {
-    padding: 4rem 0.75rem 1rem;
+    top: 52px; /* Match the header height */
   }
 
   .nav-link {
