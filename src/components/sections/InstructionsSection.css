@@ -1,0 +1,230 @@
+.instructions-section {
+  padding: 4rem 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.instructions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+.instructions-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.instructions-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.instructions-section h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.video-guides {
+  margin-bottom: 4rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.video-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-item h4 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.download-instructions {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checklists {
+  margin-bottom: 4rem;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.checklist-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checklist-header {
+  padding: 1.5rem;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.checklist-header:hover {
+  background-color: #f8f9fa;
+}
+
+.checklist-header h4 {
+  margin: 0;
+  color: #333;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.checklist-header[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.checklist-steps {
+  list-style: none;
+  padding: 1.5rem;
+  margin: 0;
+  background: #fff;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.checklist-steps li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666;
+}
+
+.checklist-steps li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
+
+.checklist-steps li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .instructions-section {
+    padding: 2rem 0;
+  }
+
+  .video-grid,
+  .checklist-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .video-item,
+  .checklist-item {
+    padding: 1rem;
+  }
+
+  .instructions-section h2 {
+    font-size: 2rem;
+  }
+
+  .instructions-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+} 

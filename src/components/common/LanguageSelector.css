@@ -1,0 +1,31 @@
+.language-selector {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.lang-btn {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
+}
+
+.lang-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    margin: 10px 0;
+  }
+} 

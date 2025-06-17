@@ -1,0 +1,115 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  padding: 2rem;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.not-found-content h1 {
+  font-size: 6rem;
+  color: #007bff;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-content h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.not-found-content p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .not-found-content {
+    padding: 2rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 4rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .not-found-content p {
+    font-size: 1rem;
+  }
+
+  .home-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .not-found-page {
+    padding: 1rem;
+  }
+
+  .not-found-content {
+    padding: 1.5rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 3rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .not-found-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+} 

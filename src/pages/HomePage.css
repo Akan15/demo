@@ -1,0 +1,21 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-page > * {
+  width: 100%;
+}
+
+.home-page main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 0;
+  }
+} 
