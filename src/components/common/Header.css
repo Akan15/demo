@@ -1,15 +1,32 @@
+/* Глобальные сбросы */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* Хедер */
 .header {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .header .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
 }
 
 .header-content {
@@ -18,6 +35,7 @@
   align-items: center;
   padding: 1rem 0;
   position: relative;
+  width: 100%;
 }
 
 .logo {
@@ -89,8 +107,27 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .header .container {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+  }
+
   .header-content {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo {
+    margin-left: 0;
   }
 
   .logo img {
@@ -99,6 +136,8 @@
 
   .mobile-menu-button {
     display: block;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   .mobile-menu-button.active span:nth-child(1) {
@@ -122,8 +161,9 @@
     bottom: 0;
     background-color: white;
     flex-direction: column;
-    padding: 5rem 2rem 2rem;
+    width: 100%; /* Исправлено: было 100vw */
     margin: 0;
+    padding: 5rem 0 2rem;
     gap: 1.5rem;
     z-index: 1;
   }
@@ -133,9 +173,10 @@
   }
 
   .nav-link {
+    padding: 0.75rem 1rem;
+    margin: 0;
     width: 100%;
     text-align: center;
-    padding: 0.75rem;
     font-size: 1.1rem;
   }
 
@@ -150,8 +191,12 @@
 }
 
 @media (max-width: 480px) {
+  .header .container {
+    padding: 0;
+  }
+
   .header-content {
-    padding: 0.5rem 0;
+    padding: 0.5rem;
   }
 
   .logo img {
@@ -159,11 +204,18 @@
   }
 
   .nav {
-    padding: 4rem 1rem 1rem;
+    padding: 4rem 0.75rem 1rem;
   }
 
   .nav-link {
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
   }
-} 
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+}
