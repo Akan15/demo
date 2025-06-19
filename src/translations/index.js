@@ -1,7 +1,7 @@
 export const translations = {
   ru: {
     // Navigation
-    about: 'О проекте',
+    about: 'О департаменте',
     products: 'Приложения',
     instructions: 'Инструкции',
     faq: 'FAQ',
@@ -9,9 +9,9 @@ export const translations = {
     topServices: 'Топ-услуги',
 
     // About Section
-    aboutTitle: 'О проекте ИС МГОВ',
-    aboutText1: 'Информационная система МГОВ (Мобильное государство) - это инновационный проект, направленный на цифровизацию государственных услуг и упрощение взаимодействия граждан с государственными органами через мобильные приложения.',
-    aboutText2: 'Наша цель - сделать государственные услуги доступными в любое время и в любом месте, обеспечивая безопасность и удобство использования современных технологий.',
+    aboutTitle: 'О нашем департаменте',
+    aboutText1: 'Департамент информационных систем МГОВ занимается разработкой, внедрением и сопровождением цифровых решений в рамках инициативы "Мобильное государство". Наша команда обеспечивает техническую и методологическую поддержку сервисов, которые делают государственные услуги доступными гражданам через мобильные платформы.',
+    aboutText2: 'Мы отвечаем за стабильную работу информационной системы, развитие пользовательских интерфейсов, защиту данных и интеграцию с внешними системами. Наша миссия — создавать надежную, безопасную и удобную цифровую инфраструктуру для взаимодействия между государством и гражданами.',
 
     // Products Section
     productsTitle: 'Продукты и модули',
@@ -191,24 +191,26 @@ export const translations = {
       goToService: 'Перейти к услуге',
       services: {
         criminalRecord: 'Справка о несудимости',
-        registerLLP: 'Регистрация ТОО',
-        digitalID: 'Получение цифрового удостоверения',
-        taxPayment: 'Оплата налогов'
+        UAPF: 'Информация о начислениях ЕНПФ с переводом',
+        birthCertificates: 'Получение свидетельства о рождении ребенка',
+        pensionCertificates: 'Получение справки о пенсионных отчислениях с переводом',
+        f6Certificate: 'Справка Ф-6 (о наличии недвижимости)',
+        legalEntityCertificate: 'Выдача справки о регистрации юридического лица'
       }
     }
   },
   kk: {
     // Navigation
-    about: 'Жоба туралы',
+    about: 'Департамент туралы',
     products: 'Қосымшалар',
     instructions: 'Нұсқаулар',
     faq: 'Жиі қойылатын сұрақтар',
     contact: 'Кері байланыс',
 
     // About Section
-    aboutTitle: 'ММОЖ АЖ туралы',
-    aboutText1: 'ММОЖ АЖ (Мобильді мемлекет) - бұл мемлекеттік қызметтерді цифрландыруға және азаматтардың мемлекеттік органдармен өзара әрекеттесуін мобильді қосымшалар арқылы жеңілдетуге бағытталған инновациялық жоба.',
-    aboutText2: 'Біздің мақсатымыз - мемлекеттік қызметтерді қауіпсіздік пен қолайлылықты қамтамасыз ету арқылы кез келген уақытта және кез келген жерде қолжетімді ету.',
+    aboutTitle: 'Біздің департамент туралы',
+    aboutText1: 'МГМ Ақпараттық жүйелер департаменті "мобильді мемлекет" бастамасы шеңберінде цифрлық шешімдерді әзірлеумен, енгізумен және сүйемелдеумен айналысады. Біздің команда Мемлекеттік қызметтерді мобильді платформалар арқылы азаматтарға қолжетімді ететін сервистерге техникалық және әдіснамалық қолдау көрсетеді.',
+    aboutText2: 'Біз ақпараттық жүйенің тұрақты жұмысына, пайдаланушы интерфейстерін дамытуға, деректерді қорғауға және сыртқы жүйелермен интеграциялауға жауаптымыз. Біздің миссиямыз — мемлекет пен азаматтар арасындағы өзара іс-қимыл үшін сенімді, қауіпсіз және ыңғайлы цифрлық инфрақұрылымды құру.',
 
     // Products Section
     productsTitle: 'Өнімдер мен модульдер',
@@ -388,24 +390,26 @@ export const translations = {
       goToService: 'Қызметке өту',
       services: {
         criminalRecord: 'Теріс қылмыстық тіркеу туралы анықтама',
-        registerLLP: 'ЖШС тіркеу',
-        digitalID: 'Сандық куәлік алу',
-        taxPayment: 'Салық төлеу'
+        UAPF: 'ЕНПФ-дағы аударымдар туралы ақпарат',
+        birthCertificates: 'Баланың туу туралы куәлігін алу',
+        pensionCertificates: 'Зейнетақы аударымдары туралы анықтаманы алу және аудару',
+        f6Certificate: 'F-6 анықтамасы (жылжымайтын мүліктің бар-жоғы туралы)',
+        legalEntityCertificate: 'Заңды тұлғаны тіркеу туралы анықтама беру'
       }
     }
   },
   en: {
     // Navigation
-    about: 'About',
+    about: 'About the department',
     products: 'Applications',
     instructions: 'Instructions',
     faq: 'FAQ',
     contact: 'Contact',
 
     // About Section
-    aboutTitle: 'About mGov Project',
-    aboutText1: 'mGov (Mobile Government) is an innovative project aimed at digitalizing government services and simplifying citizen interaction with government agencies through mobile applications.',
-    aboutText2: 'Our goal is to make government services accessible anytime and anywhere, ensuring security and convenience through modern technologies.',
+    aboutTitle: 'About our department',
+    aboutText1: 'The Department of Information Systems of the Moscow State University is engaged in the development, implementation and maintenance of digital solutions within the framework of the Mobile State initiative. Our team provides technical and methodological support for services that make public services available to citizens through mobile platforms.',
+    aboutText2: 'We are responsible for the stable operation of the information system, the development of user interfaces, data protection and integration with external systems. Our mission is to create a reliable, secure and convenient digital infrastructure for interaction between the state and citizens.',
 
     // Products Section
     productsTitle: 'Products and Modules',
@@ -585,9 +589,11 @@ export const translations = {
       goToService: 'Go to Service',
       services: {
         criminalRecord: 'Criminal Record Certificate',
-        registerLLP: 'LLP Registration',
-        digitalID: 'Digital ID',
-        taxPayment: 'Tax Payment'
+        UAPF: 'ENPF Contributions Information with Transfer',
+        birthCertificates: 'Obtaining a childs birth certificate',
+        pensionCertificates: 'Obtaining a certificate of pension contributions with transfer',
+        f6Certificate: 'Certificate F-6 (on real estate ownership)',
+        legalEntityCertificate: 'Issuance of a certificate of legal entity registration'
       }
     }
   },
