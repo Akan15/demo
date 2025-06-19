@@ -16,43 +16,43 @@ const StatisticsSection = () => {
     },
     {
       id: 'egov-business',
-      value: '71 000',
+      value: '71 000+',
       label: t.statistics.egovBusinessUsers,
       icon: '💼'
     },
     {
       id: 'notifications',
-      value: '100 754 570',
+      value: '100 754 570+',
       label: t.statistics.notificationsSent,
       icon: '🔔'
     },
     {
       id: 'bmc-requests',
-      value: '14 105 174',
+      value: '14 105 174+',
       label: t.statistics.bmcRequests,
       icon: '📊'
     },
     {
       id: 'sms-gateway',
-      value: '1 157 834 120',
+      value: '1 157 834 120+',
       label: t.statistics.smsMessages,
       icon: '📨'
     },
     {
       id: 'digital-docs',
-      value: '37',
+      value: '37+',
       label: t.statistics.digitalDocs,
       icon: '📄'
     },
     {
       id: 'gov-services',
-      value: '1 086',
+      value: '1 086+',
       label: t.statistics.govServices,
       icon: '🏛️'
     },
     {
       id: 'surveys',
-      value: '34',
+      value: '34+',
       label: t.statistics.surveys,
       icon: '📝'
     }
