@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../translations";
 import "./AboutSection.css";
 
 const AboutSection = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const t = translations[language] || translations.ru;
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../translations";
 import "./HeroSection.css";
 
 const HeroSection = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const t = translations[language] || translations.ru;
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ const HeroSection = () => {
           <div className={`hero-text ${isVisible ? "animate-fade-in" : ""}`}>
             <h1 className="hero-title">
               {t.heroTitle || "Цифровое правительство"}
-              <span className="title-accent">Казахстана</span>
+              <span className="title-accent"> Казахстана</span>
             </h1>
             <p className="hero-subtitle">
               {t.heroSubtitle ||
