@@ -81,7 +81,7 @@ const ContactSection = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await submitFeedback(formData);
+      await submitFeedback(formData);
       setSubmitStatus("success");
       setFormData({ name: "", phone: "", iin: "", message: "" });
     } catch (error) {
