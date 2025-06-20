@@ -42,7 +42,7 @@ const ProductsSection = () => {
           className={`products-header ${isVisible ? "animate-fade-in" : ""}`}
         >
           <h2 className="section-title">
-            {t.productsTitle || "Наши продукты"}
+            {t.productsTitle || "Наши п��одукты"}
           </h2>
           <p className="section-subtitle">
             {t.productsIntro ||
