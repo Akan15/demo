@@ -41,7 +41,8 @@ const FaqSection = () => {
         helpful: 50 + index * 10, // Stable helpful votes instead of random
       };
     });
-  }, [language]); // Use language as dependency instead of t.faqs
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language]); // Use language as stable dependency to prevent infinite loops
 
   useEffect(() => {
     const observer = new IntersectionObserver(
