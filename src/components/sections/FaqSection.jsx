@@ -25,7 +25,8 @@ const FaqSection = () => {
 
   // Enhanced FAQ data with categories - memoized to prevent infinite loops
   const enhancedFaqs = useMemo(() => {
-    return (t.faqs || []).map((faq, index) => {
+    const faqs = t.faqs || [];
+    return faqs.map((faq, index) => {
       const categoryMap = {
         0: "registration",
         1: "documents",
@@ -37,10 +38,10 @@ const FaqSection = () => {
         ...faq,
         category: categoryMap[index] || "technical",
         id: index,
-        helpful: Math.floor(Math.random() * 100) + 50, // Simulated helpful votes
+        helpful: 50 + index * 10, // Stable helpful votes instead of random
       };
     });
-  }, [t.faqs]);
+  }, [language]); // Use language as dependency instead of t.faqs
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -467,7 +468,7 @@ const FaqSection = () => {
                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                     />
                   </svg>
-                  Написать в поддержк��
+                  Написать в поддержку
                 </a>
                 <a href="tel:+77172701999" className="support-btn secondary">
                   <svg
