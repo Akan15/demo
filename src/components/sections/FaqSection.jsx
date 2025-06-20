@@ -80,7 +80,7 @@ const FaqSection = () => {
     }
 
     setFilteredFaqs(filtered);
-  }, [searchTerm, selectedCategory, language]);
+  }, [searchTerm, selectedCategory, language, enhancedFaqs]);
 
   const handleFaqClick = (index) => {
     if (expandedFaq === index) {
