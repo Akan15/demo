@@ -410,6 +410,17 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .about-content {
+    gap: var(--space-5xl);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3xl);
+  }
+}
+
 @media (max-width: 1024px) {
   .about-content {
     gap: var(--space-4xl);
@@ -427,6 +438,57 @@
   .about-card {
     padding: var(--space-2xl);
     gap: var(--space-lg);
+  }
+
+  .card-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .value-card {
+    padding: var(--space-2xl);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-5xl);
+  }
+
+  .about-text-section,
+  .about-features {
+    transform: none;
+    opacity: 1;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-xl);
+  }
+
+  .feature-number {
+    margin-bottom: var(--space-md);
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-2xl);
+  }
+
+  .card-icon {
+    margin: 0 auto var(--space-lg);
+  }
+
+  .values-title {
+    font-size: var(--text-2xl);
   }
 }
 

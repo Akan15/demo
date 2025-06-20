@@ -394,9 +394,16 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--space-4xl);
+  }
+}
+
 @media (max-width: 1024px) {
   .products-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--space-3xl);
   }
 
@@ -406,6 +413,53 @@
 
   .products-stats {
     gap: var(--space-2xl);
+  }
+
+  .product-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .product-card {
+    padding: var(--space-3xl);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .app-links {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .app-store-btn,
+  .play-store-btn {
+    min-width: auto;
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .products-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .stat-item {
+    flex-direction: row;
+    text-align: left;
+    padding: var(--space-xl);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .stat-icon {
+    margin-bottom: 0;
+    margin-right: var(--space-lg);
   }
 }
 
