@@ -403,7 +403,7 @@ const ProductsSection = () => {
             </div>
             <div className="stat-content">
               <div className="stat-number">5M+</div>
-              <div className="stat-label">Активных пользователей</div>
+              <div className="stat-label">{t.heroStatUsers || "Активных пользователей"}</div>
             </div>
           </div>
 
@@ -426,7 +426,7 @@ const ProductsSection = () => {
             </div>
             <div className="stat-content">
               <div className="stat-number">150+</div>
-              <div className="stat-label">Государственных услуг</div>
+              <div className="stat-label">{t.heroStatServices || "Государственных услуг"}</div>
             </div>
           </div>
 
@@ -449,7 +449,7 @@ const ProductsSection = () => {
             </div>
             <div className="stat-content">
               <div className="stat-number">99.9%</div>
-              <div className="stat-label">Время доступности</div>
+              <div className="stat-label">{t.heroStatUptime || "Время доступности"}</div>
             </div>
           </div>
         </div>

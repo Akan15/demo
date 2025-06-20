@@ -81,8 +81,7 @@ const InstructionsSection = () => {
             {t.instructionsTitle || "Инструкции"}
           </h2>
           <p className="section-subtitle">
-            Подробные руководства и пошаговые инструкции для работы с нашими
-            приложениями
+            {t.instructionsSubtitle || "Подробные руководства и пошаговые инструкции для работы с нашими приложениями"}
           </p>
         </div>
 
@@ -137,8 +136,7 @@ const InstructionsSection = () => {
               <div className="video-content">
                 <h4>{t.eGovMobileVideoTitle || "eGov Mobile"}</h4>
                 <p>
-                  Пошаговое руководство по регистрации и использованию
-                  мобильного приложения
+                  {t.instructionsMobileGuide || "Пошаговое руководство по регистрации и использованию мобильного приложения"}
                 </p>
                 <div className="video-stats">
                   <span className="views">
@@ -150,7 +148,7 @@ const InstructionsSection = () => {
                     >
                       <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
                     </svg>
-                    15K просмотров
+                    {t.instructionsViewsMobile || "15K просмотров"}
                   </span>
                   <span className="rating">
                     <svg
@@ -193,8 +191,7 @@ const InstructionsSection = () => {
               <div className="video-content">
                 <h4>{t.eGovBusinessVideoTitle || "eGov Business"}</h4>
                 <p>
-                  Руководство по получению документов и работе с
-                  бизнес-функциями
+                  {t.instructionsBusinessGuide || "Руководство по получению документов и работе с бизнес-функциями"}
                 </p>
                 <div className="video-stats">
                   <span className="views">
@@ -206,7 +203,7 @@ const InstructionsSection = () => {
                     >
                       <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
                     </svg>
-                    12K просмотров
+                    {t.instructionsViewsBusiness || "12K просмотров"}
                   </span>
                   <span className="rating">
                     <svg
@@ -415,10 +412,9 @@ const InstructionsSection = () => {
               </svg>
             </div>
             <div className="download-content">
-              <h3>Полное руководство пользователя</h3>
+              <h3>{t.instructionsDownloadTitle || "Полное руководство пользователя"}</h3>
               <p>
-                Загрузите подробные инструкции в формате PDF для работы в
-                автономном режиме
+                {t.instructionsDownloadDesc || "Загрузите подробные инструкции в формате PDF для работы в автономном режиме"}
               </p>
               <button onClick={handleDownload} className="download-button">
                 <svg

@@ -166,22 +166,22 @@ const Footer = () => {
             <div className="stats-mini">
               <div className="stat-mini">
                 <span className="stat-number">5M+</span>
-                <span className="stat-label">Пользователей</span>
+                <span className="stat-label">{t.footer?.users || "Пользователей"}</span>
               </div>
               <div className="stat-mini">
                 <span className="stat-number">150+</span>
-                <span className="stat-label">Услуг</span>
+                <span className="stat-label">{t.footer?.services || "Услуг"}</span>
               </div>
               <div className="stat-mini">
                 <span className="stat-number">99.9%</span>
-                <span className="stat-label">Доступность</span>
+                <span className="stat-label">{t.footer?.uptime || "Доступность"}</span>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="footer-section links-section">
-            <h4>Быстрые ссылки</h4>
+            <h4>{t.footer?.quickLinks || "Быстрые ссылки"}</h4>
             <ul className="footer-links">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -209,7 +209,7 @@ const Footer = () => {
 
           {/* Apps Download */}
           <div className="footer-section apps-section">
-            <h4>Скачать приложения</h4>
+            <h4>{t.footer?.downloadApps || "Скачать приложения"}</h4>
             <div className="apps-list">
               {appDownloads.map((app, index) => (
                 <div key={index} className="app-group">
@@ -235,7 +235,7 @@ const Footer = () => {
 
           {/* Social & Contact */}
           <div className="footer-section social-section">
-            <h4>Связаться с нами</h4>
+            <h4>{t.footer?.contactTitle || "Связаться с нами"}</h4>
             <div className="contact-info">
               <div className="contact-item">
                 <svg

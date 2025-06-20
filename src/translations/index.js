@@ -60,6 +60,7 @@ export const translations = {
 
     // Instructions Section
     instructionsTitle: "Инструкции",
+    instructionsSubtitle: "Подробные руководства и пошаговые инструкции для работы с нашими приложениями",
     videoGuidesTitle: "Видео-гайды",
     eGovMobileVideoTitle: "eGov Mobile",
     eGovBusinessVideoTitle: "eGov Business",
@@ -79,6 +80,12 @@ export const translations = {
       "Подтвердите запрос",
     ],
     downloadInstructions: "Скачать инструкции и чек-листы (PDF)",
+    instructionsMobileGuide: "Пошаговое руководство по регистрации и использованию мобильного приложения",
+    instructionsBusinessGuide: "Руководство по получению документов и работе с бизнес-функциями",
+    instructionsViewsMobile: "15K просмотров",
+    instructionsViewsBusiness: "12K просмотров",
+    instructionsDownloadTitle: "Полное руководство пользователя",
+    instructionsDownloadDesc: "Загрузите подробные инструкции в формате PDF для работы в автономном режиме",
 
     // FAQ Section
     faqTitle: "Часто задаваемые вопросы",
@@ -156,6 +163,11 @@ export const translations = {
       facebookDesc: "Присоединяйтесь к сообществу",
       youtubeDesc: "Видео-инструкции и гайды",
       emailDesc: "nitec@nitec.kz",
+      quickLinks: "Быстрые ссылки",
+      downloadApps: "Скачать приложения",
+      users: "Пользователей",
+      services: "Услуг",
+      uptime: "Доступность",
     },
 
     downloadMobileGuide: "Скачать инструкцию eGov Mobile (PDF)",
@@ -376,6 +388,7 @@ export const translations = {
 
     // Instructions Section
     instructionsTitle: "Нұсқаулар",
+    instructionsSubtitle: "Біздің қосымшалармен жұмыс істеуге арналған толық нұсқаулықтар мен қадамдық көрсетілімдер",
     videoGuidesTitle: "Бейне нұсқаулар",
     eGovMobileVideoTitle: "eGov Mobile",
     eGovBusinessVideoTitle: "Құжат алу жолы",
@@ -395,6 +408,12 @@ export const translations = {
       "Сұранысты растаңыз",
     ],
     downloadInstructions: "Нұсқаулар мен тексеру тізімін жүктеу (PDF)",
+    instructionsMobileGuide: "Мобильді қосымшаны тіркеу және пайдалану бойынша қадамдық нұсқаулық",
+    instructionsBusinessGuide: "Құжаттарды алу және бизнес-функциялармен жұмыс істеу бойынша нұсқаулық",
+    instructionsViewsMobile: "15K қаралым",
+    instructionsViewsBusiness: "12K қаралым",
+    instructionsDownloadTitle: "Толық пайдаланушы нұсқаулығы",
+    instructionsDownloadDesc: "Офлайн жұмыс істеу үшін PDF форматындағы толық нұсқаулықты жүктеп алыңыз",
 
     // FAQ Section
     faqTitle: "Жиі қойылатын сұрақтар",
@@ -472,6 +491,11 @@ export const translations = {
       facebookDesc: "Қауымдастыққа қосылыңыз",
       youtubeDesc: "Бейне-нұсқаулықтар мен гайдтар",
       emailDesc: "nitec@nitec.kz",
+      quickLinks: "Жылдам сілтемелер",
+      downloadApps: "Қосымшаларды жүктеу",
+      users: "Пайдаланушылар",
+      services: "Қызметтер",
+      uptime: "Қолжетімділік",
     },
 
     downloadMobileGuide: "eGov Mobile нұсқаулығын жүктеу (PDF)",
@@ -693,6 +717,7 @@ export const translations = {
 
     // Instructions Section
     instructionsTitle: "Instructions",
+    instructionsSubtitle: "Detailed guides and step-by-step instructions for working with our applications",
     videoGuidesTitle: "Video Guides",
     eGovMobileVideoTitle: "eGov Mobile",
     eGovBusinessVideoTitle: "eGov Business",
@@ -712,6 +737,12 @@ export const translations = {
       "Confirm request",
     ],
     downloadInstructions: "Download instructions and checklists (PDF)",
+    instructionsMobileGuide: "Step-by-step guide to registering and using the mobile app",
+    instructionsBusinessGuide: "Guide to obtaining documents and working with business functions",
+    instructionsViewsMobile: "15K views",
+    instructionsViewsBusiness: "12K views",
+    instructionsDownloadTitle: "Complete User Guide",
+    instructionsDownloadDesc: "Download detailed instructions in PDF format for offline use",
 
     // FAQ Section
     faqTitle: "Frequently Asked Questions",
@@ -788,6 +819,11 @@ export const translations = {
       facebookDesc: "Join the community",
       youtubeDesc: "Video guides and tutorials",
       emailDesc: "nitec@nitec.kz",
+      quickLinks: "Quick Links",
+      downloadApps: "Download Apps",
+      users: "Users",
+      services: "Services",
+      uptime: "Uptime",
     },
 
     downloadMobileGuide: "Download eGov Mobile Guide (PDF)",

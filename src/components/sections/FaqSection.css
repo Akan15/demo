@@ -789,6 +789,17 @@
   .categories-wrapper {
     gap: var(--space-md);
   }
+
+  .header-content {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-2xl);
+  }
+  .header-text {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -799,6 +810,17 @@
 
   .header-text {
     text-align: center;
+  }
+
+  .header-content {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-2xl);
+  }
+  .header-text {
+    text-align: center !important;
   }
 
   .categories-wrapper {
