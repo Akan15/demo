@@ -64,7 +64,7 @@ const AboutSection = () => {
                 </svg>
               </div>
               <div className="card-content">
-                <h3>Наша миссия</h3>
+                <h3>{t.aboutMissionTitle || "Наша миссия"}</h3>
                 <p>
                   {t.aboutText1 ||
                     "Департамент информационных технологий занимается разработкой и внедрением современных цифровых решений для государственных органов Республики Казахстан."}
@@ -90,7 +90,7 @@ const AboutSection = () => {
                 </svg>
               </div>
               <div className="card-content">
-                <h3>Наши достижения</h3>
+                <h3>{t.aboutAchievementsTitle || "Наши достижения"}</h3>
                 <p>
                   {t.aboutText2 ||
                     "Мы успешно внедрили множество проектов, которые значительно улучшили качество предоставления государственных услуг и повысили эффективность работы государственных органов."}
@@ -106,10 +106,9 @@ const AboutSection = () => {
               <div className="feature-item">
                 <div className="feature-number">01</div>
                 <div className="feature-content">
-                  <h4>Инновации</h4>
+                  <h4>{t.aboutFeatureInnovationTitle || "Инновации"}</h4>
                   <p>
-                    Применяем передовые технологии для создания эффективных
-                    решений
+                    {t.aboutFeatureInnovationDesc || "Применяем передовые технологии для создания эффективных решений"}
                   </p>
                 </div>
               </div>
@@ -117,9 +116,9 @@ const AboutSection = () => {
               <div className="feature-item">
                 <div className="feature-number">02</div>
                 <div className="feature-content">
-                  <h4>Качество</h4>
+                  <h4>{t.aboutFeatureQualityTitle || "Качество"}</h4>
                   <p>
-                    Высочайшие стандарты разработки и тестирования продуктов
+                    {t.aboutFeatureQualityDesc || "Высочайшие стандарты разработки и тестирования продуктов"}
                   </p>
                 </div>
               </div>
@@ -127,9 +126,9 @@ const AboutSection = () => {
               <div className="feature-item">
                 <div className="feature-number">03</div>
                 <div className="feature-content">
-                  <h4>Безопасность</h4>
+                  <h4>{t.aboutFeatureSecurityTitle || "Безопасность"}</h4>
                   <p>
-                    Защита данных и кибербезопасность на международном уровне
+                    {t.aboutFeatureSecurityDesc || "Защита данных и кибербезопасность на международном уровне"}
                   </p>
                 </div>
               </div>
@@ -137,8 +136,8 @@ const AboutSection = () => {
               <div className="feature-item">
                 <div className="feature-number">04</div>
                 <div className="feature-content">
-                  <h4>Доступность</h4>
-                  <p>Равный доступ к цифровым услугам для всех граждан</p>
+                  <h4>{t.aboutFeatureAccessibilityTitle || "Доступность"}</h4>
+                  <p>{t.aboutFeatureAccessibilityDesc || "Равный доступ к цифровым услугам для всех граждан"}</p>
                 </div>
               </div>
             </div>
@@ -147,7 +146,7 @@ const AboutSection = () => {
 
         {/* Values Section */}
         <div className={`about-values ${isVisible ? "animate-fade-in" : ""}`}>
-          <h3 className="values-title">Наши ценности</h3>
+          <h3 className="values-title">{t.aboutValuesTitle || "Наши ценности"}</h3>
           <div className="values-grid">
             <div className="value-card">
               <div className="value-icon">
@@ -166,8 +165,8 @@ const AboutSection = () => {
                   />
                 </svg>
               </div>
-              <h4>Эффективность</h4>
-              <p>Оптимизация процессов и максимальная продуктивность</p>
+              <h4>{t.aboutValueEfficiencyTitle || "Эффективность"}</h4>
+              <p>{t.aboutValueEfficiencyDesc || "Оптимизация процессов и максимальная продуктивность"}</p>
             </div>
 
             <div className="value-card">
@@ -187,8 +186,8 @@ const AboutSection = () => {
                   />
                 </svg>
               </div>
-              <h4>Прозрачность</h4>
-              <p>Открытость во всех процессах и решениях</p>
+              <h4>{t.aboutValueTransparencyTitle || "Прозрачность"}</h4>
+              <p>{t.aboutValueTransparencyDesc || "Открытость во всех процессах и решениях"}</p>
             </div>
 
             <div className="value-card">
@@ -208,8 +207,8 @@ const AboutSection = () => {
                   />
                 </svg>
               </div>
-              <h4>Надежность</h4>
-              <p>Стабильная работа и высокое качество услуг</p>
+              <h4>{t.aboutValueReliabilityTitle || "Надежность"}</h4>
+              <p>{t.aboutValueReliabilityDesc || "Стабильная работа и высокое качество услуг"}</p>
             </div>
 
             <div className="value-card">
@@ -229,8 +228,8 @@ const AboutSection = () => {
                   />
                 </svg>
               </div>
-              <h4>Инновации</h4>
-              <p>Постоянное развитие и внедрение новых технологий</p>
+              <h4>{t.aboutValueInnovationTitle || "Инновации"}</h4>
+              <p>{t.aboutValueInnovationDesc || "Постоянное развитие и внедрение новых технологий"}</p>
             </div>
           </div>
         </div>

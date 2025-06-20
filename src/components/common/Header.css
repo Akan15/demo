@@ -309,19 +309,28 @@ body {
   }
 
   .header-content {
-    padding: var(--space-md) 0;
-    min-height: 70px;
+    padding: var(--space-xs) 0;
+    min-height: 48px;
   }
 
   .logo img {
-    height: 40px;
+    height: 28px;
   }
 
   .mobile-menu-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: var(--space-xs);
   }
+
+  .mobile-menu-button span {
+    width: 18px;
+    left: 9px;
+  }
+
+  .mobile-menu-button span:nth-child(1) { top: 10px; }
+  .mobile-menu-button span:nth-child(2) { top: 16px; }
+  .mobile-menu-button span:nth-child(3) { top: 22px; }
 
   .nav {
     position: fixed;
@@ -453,41 +462,28 @@ body {
   }
 
   .header-content {
-    padding: var(--space-sm) 0;
-    min-height: 60px;
+    padding: 0;
+    min-height: 40px;
   }
 
   .logo img {
-    height: 35px;
+    height: 22px;
   }
 
   .mobile-menu-button {
-    width: 44px;
-    height: 44px;
-    padding: var(--space-sm);
+    width: 28px;
+    height: 28px;
+    padding: 0;
   }
 
   .mobile-menu-button span {
-    width: 20px;
-    left: 12px;
+    width: 14px;
+    left: 7px;
   }
 
-  .mobile-menu-button span:nth-child(1) {
-    top: 15px;
-  }
-
-  .mobile-menu-button span:nth-child(2) {
-    top: 21px;
-  }
-
-  .mobile-menu-button span:nth-child(3) {
-    top: 27px;
-  }
-
-  .mobile-menu-button.active span:nth-child(1),
-  .mobile-menu-button.active span:nth-child(3) {
-    top: 21px;
-  }
+  .mobile-menu-button span:nth-child(1) { top: 7px; }
+  .mobile-menu-button span:nth-child(2) { top: 12px; }
+  .mobile-menu-button span:nth-child(3) { top: 17px; }
 
   .nav {
     top: 60px;
@@ -543,5 +539,73 @@ body {
 @media (max-width: 480px) {
   .header.scrolled .logo img {
     height: 30px;
+  }
+}
+
+/* Добавить класс для блокировки прокрутки body при открытом меню */
+body.menu-open {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+@media (max-width: 1024px) {
+  .nav,
+  .nav.active {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 80px;
+    /* для плавности */
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+}
+@media (max-width: 900px) {
+  .nav,
+  .nav.active {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 65px;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+}
+@media (max-width: 768px) {
+  .nav,
+  .nav.active {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 70px;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+}
+@media (max-width: 480px) {
+  .nav,
+  .nav.active {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 60px;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
   }
 }

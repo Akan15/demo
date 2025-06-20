@@ -153,7 +153,7 @@ const ContactSection = () => {
                     />
                   </svg>
                 </div>
-                <h3>Свяжитесь с нами</h3>
+                <h3>{t.contactInfoTitle}</h3>
               </div>
 
               <div className="contact-methods">
@@ -175,8 +175,8 @@ const ContactSection = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Телефон</h4>
-                    <p>+7 (7172) 701 999</p>
+                    <h4>{t.phoneTitle}</h4>
+                    <p>{t.phoneValue}</p>
                   </div>
                 </div>
 
@@ -198,8 +198,8 @@ const ContactSection = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Email</h4>
-                    <p>nitec@nitec.kz</p>
+                    <h4>{t.emailTitle}</h4>
+                    <p>{t.emailValue}</p>
                   </div>
                 </div>
 
@@ -221,8 +221,8 @@ const ContactSection = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Время работы</h4>
-                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <h4>{t.workingHoursTitle}</h4>
+                    <p>{t.workingHoursValue}</p>
                   </div>
                 </div>
 
@@ -250,14 +250,14 @@ const ContactSection = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Адрес</h4>
-                    <p>г. Нур-Султан, ул. Мангилик Ел, 8</p>
+                    <h4>{t.addressTitle}</h4>
+                    <p>{t.addressValue}</p>
                   </div>
                 </div>
               </div>
 
               <div className="social-links">
-                <h4>Социальные сети</h4>
+                <h4>{t.socialTitle}</h4>
                 <div className="social-buttons">
                   <a
                     href="https://t.me/egovkz_bot"
@@ -318,14 +318,14 @@ const ContactSection = () => {
                     />
                   </svg>
                 </div>
-                <h3>Отправить сообщение</h3>
-                <p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
+                <h3>{t.sendMessageTitle}</h3>
+                <p>{t.contactSubtitle}</p>
               </div>
 
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="name">{t.nameLabel || "Имя *"}</label>
+                    <label htmlFor="name">{t.nameLabel}</label>
                     <div className="input-wrapper">
                       <div className="input-icon">
                         <svg
@@ -350,7 +350,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleChange}
                         className={errors.name ? "error" : ""}
-                        placeholder="Введите ваше имя"
+                        placeholder={t.namePlaceholder || t.nameLabel}
                         required
                       />
                     </div>
@@ -360,7 +360,7 @@ const ContactSection = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="phone">{t.phoneLabel || "Телефон *"}</label>
+                    <label htmlFor="phone">{t.phoneLabel}</label>
                     <div className="input-wrapper">
                       <div className="input-icon">
                         <svg
@@ -385,7 +385,7 @@ const ContactSection = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className={errors.phone ? "error" : ""}
-                        placeholder={t.phonePlaceholder || "+7XXXXXXXXXX"}
+                        placeholder={t.phonePlaceholder}
                         required
                       />
                     </div>
@@ -396,7 +396,7 @@ const ContactSection = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="iin">{t.iinLabel || "ИИН *"}</label>
+                  <label htmlFor="iin">{t.iinLabel}</label>
                   <div className="input-wrapper">
                     <div className="input-icon">
                       <svg
@@ -421,7 +421,7 @@ const ContactSection = () => {
                       value={formData.iin}
                       onChange={handleChange}
                       className={errors.iin ? "error" : ""}
-                      placeholder="Введите ваш ИИН"
+                      placeholder={t.iinPlaceholder || t.iinLabel}
                       maxLength="12"
                       required
                     />
@@ -433,7 +433,7 @@ const ContactSection = () => {
 
                 <div className="form-group">
                   <label htmlFor="message">
-                    {t.messageLabel || "Сообщение"}
+                    {t.messageLabel}
                   </label>
                   <div className="textarea-wrapper">
                     <textarea
@@ -442,7 +442,7 @@ const ContactSection = () => {
                       value={formData.message}
                       onChange={handleChange}
                       className={errors.message ? "error" : ""}
-                      placeholder="Опишите ваш вопрос или предложение..."
+                      placeholder={t.messagePlaceholder || t.messageLabel}
                       rows="4"
                       maxLength="300"
                     />
@@ -469,7 +469,7 @@ const ContactSection = () => {
                   {isSubmitting ? (
                     <>
                       <div className="loading-spinner"></div>
-                      {t.submitting || "Отправка..."}
+                      {t.submitting}
                     </>
                   ) : (
                     <>
@@ -487,7 +487,7 @@ const ContactSection = () => {
                           d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                         />
                       </svg>
-                      {t.submitButton || "Отправить сообщение"}
+                      {t.sendMessageButton}
                     </>
                   )}
                 </button>
@@ -508,7 +508,7 @@ const ContactSection = () => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    {t.successMessage || "Спасибо! Ваша заявка отправлена."}
+                    {t.successMessage}
                   </div>
                 )}
 
@@ -528,8 +528,7 @@ const ContactSection = () => {
                         d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    {t.errorMessage ||
-                      "Произошла ошибка при отправке. Пожалуйста, попробуйте позже."}
+                    {t.errorMessage}
                   </div>
                 )}
               </form>

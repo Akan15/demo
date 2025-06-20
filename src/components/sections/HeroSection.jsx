@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className={`hero-text ${isVisible ? "animate-fade-in" : ""}`}>
             <h1 className="hero-title">
               {t.heroTitle || "Цифровое правительство"}
-              <span className="title-accent"> Казахстана</span>
+              <span className="title-accent"> {t.heroKazakhstan || "Казахстана"}</span>
             </h1>
             <p className="hero-subtitle">
               {t.heroSubtitle ||
@@ -101,8 +101,8 @@ const HeroSection = () => {
                     </svg>
                   </div>
                   <div className="service-details">
-                    <h4>Государственные услуги</h4>
-                    <p>Быстро и удобно</p>
+                    <h4>{t.heroService1Title || "Государственные услуги"}</h4>
+                    <p>{t.heroService1Desc || "Быстро и удобно"}</p>
                   </div>
                 </div>
 
@@ -124,8 +124,8 @@ const HeroSection = () => {
                     </svg>
                   </div>
                   <div className="service-details">
-                    <h4>Мобильные приложения</h4>
-                    <p>Доступ 24/7</p>
+                    <h4>{t.heroService2Title || "Мобильные приложения"}</h4>
+                    <p>{t.heroService2Desc || "Доступ 24/7"}</p>
                   </div>
                 </div>
 
@@ -147,8 +147,8 @@ const HeroSection = () => {
                     </svg>
                   </div>
                   <div className="service-details">
-                    <h4>Аналитика и отчеты</h4>
-                    <p>Данные в реальном времени</p>
+                    <h4>{t.heroService3Title || "Аналитика и отчеты"}</h4>
+                    <p>{t.heroService3Desc || "Данные в реальном времени"}</p>
                   </div>
                 </div>
               </div>
@@ -163,19 +163,19 @@ const HeroSection = () => {
           <div className="stats-grid">
             <div className="stat-item">
               <div className="stat-number">150+</div>
-              <div className="stat-label">Государственных услуг</div>
+              <div className="stat-label">{t.heroStatServices || "Государственных услуг"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">5M+</div>
-              <div className="stat-label">Активных пользователей</div>
+              <div className="stat-label">{t.heroStatUsers || "Активных пользователей"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">99.9%</div>
-              <div className="stat-label">Время доступности</div>
+              <div className="stat-label">{t.heroStatUptime || "Время доступности"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">24/7</div>
-              <div className="stat-label">Поддержка</div>
+              <div className="stat-label">{t.heroStatSupport || "Поддержка"}</div>
             </div>
           </div>
         </div>

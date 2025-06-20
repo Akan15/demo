@@ -155,8 +155,8 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="logo-text">
-                <h3>mGov</h3>
-                <p>Mobile Government</p>
+                <h3>{t.footer?.logoTitle || "mGov"}</h3>
+                <p>{t.footer?.logoSubtitle || "Mobile Government"}</p>
               </div>
             </div>
             <p className="about-text">
@@ -274,7 +274,7 @@ const Footer = () => {
             </div>
 
             <div className="social-links">
-              <h5>Социальные сети</h5>
+              <h5>{t.footer?.socialTitle || "Социальные сети"}</h5>
               <div className="social-grid">
                 {socialLinks.map((link, index) => (
                   <a
@@ -292,7 +292,7 @@ const Footer = () => {
                     />
                     <div className="social-content">
                       <span className="social-name">{link.name}</span>
-                      <span className="social-desc">{link.description}</span>
+                      <span className="social-desc">{t.footer?.[link.className+"Desc"] || link.description}</span>
                     </div>
                   </a>
                 ))}
@@ -327,27 +327,26 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              <p>&copy; 2025 mGov Kazakhstan. Все права защищены.</p>
+              <p>{t.footer?.copyright || "© 2025 mGov Kazakhstan. Все права защищены."}</p>
               <p className="project-info">
                 {t.footer?.rights || "Студенческий проект, июнь 2025"}
               </p>
             </div>
             <div className="footer-links-bottom">
               <a href="#privacy" className="footer-link-bottom">
-                Политика конфиденциальности
+                {t.footer?.privacy || "Политика конфиденциальности"}
               </a>
               <a href="#terms" className="footer-link-bottom">
-                Условия использов��ния
+                {t.footer?.terms || "Условия использования"}
               </a>
               <a href="#accessibility" className="footer-link-bottom">
-                Доступность
+                {t.footer?.accessibility || "Доступность"}
               </a>
             </div>
           </div>
           <div className="footer-organization">
             <p className="organization-info">
-              {t.footer?.contactCenter ||
-                "Контакт-центр АО «НИТ»: +7 (7172) 701 999"}
+              {t.footer?.contactCenter || "Контакт-центр АО «НИТ»: +7 (7172) 701 999"}
             </p>
           </div>
         </div>
