@@ -1,46 +1,193 @@
+/* Modern App Layout */
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+  background: var(--bg-secondary);
 }
 
 .App main {
   flex: 1;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Loading states */
+.App.loading {
+  opacity: 0.8;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App.loading::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Smooth page transitions */
+.App main {
+  animation: pageEnter 0.5s ease-out;
 }
 
-@keyframes App-logo-spin {
+@keyframes pageEnter {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* Global focus styles */
+.App :focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.App :focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-blue);
+  color: var(--text-inverse);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  z-index: 100;
+  font-weight: var(--font-medium);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Error boundary styles */
+.error-boundary {
+  padding: var(--space-4xl);
+  text-align: center;
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  margin: var(--space-4xl);
+  border: 1px solid var(--error);
+}
+
+.error-boundary h2 {
+  color: var(--error);
+  margin-bottom: var(--space-lg);
+}
+
+.error-boundary p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.error-boundary button {
+  background: var(--primary-blue);
+  color: var(--text-inverse);
+  border: none;
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-weight: var(--font-medium);
+  transition: background var(--transition-fast);
+}
+
+.error-boundary button:hover {
+  background: var(--primary-blue-dark);
+}
+
+/* Print styles */
+@media print {
+  .App {
+    background: white !important;
+  }
+
+  .App main {
+    animation: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .App {
+    background: white;
+  }
+
+  .App :focus {
+    outline: 3px solid black;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .App main {
+    animation: none;
+  }
+
+  .skip-link {
+    transition: none;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .App {
+    overflow-x: hidden;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .App button,
+  .App a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Dark mode preparation (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles would go here if needed */
+}
+
+/* Legacy browser fallbacks */
+.App {
+  background: #f8fafc; /* Fallback for older browsers */
+}
+
+/* Performance optimizations */
+.App * {
+  will-change: auto;
+}
+
+.App .animate-fade-in,
+.App .animate-slide-in-left,
+.App .animate-slide-in-right {
+  will-change: transform, opacity;
+}
+
+/* Ensure proper stacking context */
+.App {
+  isolation: isolate;
 }
