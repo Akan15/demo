@@ -44,12 +44,11 @@ const TopServicesSection = () => {
     }
   ];
 
-  return (
+  return ( 
     <section id="top-services" className="top-services-section">
       <div className="container">
         <h2 className="section-title">{t.topServices.title}</h2>
         <p className="section-description">{t.topServices.description}</p>
-        
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
