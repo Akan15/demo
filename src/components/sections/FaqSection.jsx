@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useMemo } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../translations";
 import "./FaqSection.css";
@@ -23,22 +23,24 @@ const FaqSection = () => {
     { id: "technical", name: "Технические", icon: "⚙️" },
   ];
 
-  // Enhanced FAQ data with categories
-  const enhancedFaqs = (t.faqs || []).map((faq, index) => {
-    const categoryMap = {
-      0: "registration",
-      1: "documents",
-      2: "security",
-      3: "technical",
-      4: "registration",
-    };
-    return {
-      ...faq,
-      category: categoryMap[index] || "technical",
-      id: index,
-      helpful: Math.floor(Math.random() * 100) + 50, // Simulated helpful votes
-    };
-  });
+  // Enhanced FAQ data with categories - memoized to prevent infinite loops
+  const enhancedFaqs = useMemo(() => {
+    return (t.faqs || []).map((faq, index) => {
+      const categoryMap = {
+        0: "registration",
+        1: "documents",
+        2: "security",
+        3: "technical",
+        4: "registration",
+      };
+      return {
+        ...faq,
+        category: categoryMap[index] || "technical",
+        id: index,
+        helpful: Math.floor(Math.random() * 100) + 50, // Simulated helpful votes
+      };
+    });
+  }, [t.faqs]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -80,7 +82,7 @@ const FaqSection = () => {
     }
 
     setFilteredFaqs(filtered);
-  }, [searchTerm, selectedCategory, language, enhancedFaqs]);
+  }, [searchTerm, selectedCategory, enhancedFaqs]);
 
   const handleFaqClick = (index) => {
     if (expandedFaq === index) {
@@ -465,7 +467,7 @@ const FaqSection = () => {
                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                     />
                   </svg>
-                  Написать в поддержку
+                  Написать в поддержк��
                 </a>
                 <a href="tel:+77172701999" className="support-btn secondary">
                   <svg
