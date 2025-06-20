@@ -1,21 +1,126 @@
+/* Modern HomePage Styles */
 .home-page {
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.home-page > * {
-  width: 100%;
+/* Smooth scroll behavior for navigation */
+html {
+  scroll-behavior: smooth;
 }
 
-.home-page main {
-  flex: 1;
-  padding: 2rem 0;
+/* Section spacing and transitions */
+.home-page > section {
+  position: relative;
+  z-index: 1;
 }
 
+/* Add subtle transitions between sections */
+.home-page > section + section {
+  position: relative;
+}
+
+.home-page > section + section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gray-200) 20%,
+    var(--gray-300) 50%,
+    var(--gray-200) 80%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+/* Enhanced section alternating backgrounds */
+.home-page > section:nth-child(even) {
+  background: var(--bg-primary);
+}
+
+.home-page > section:nth-child(odd) {
+  background: var(--gray-50);
+}
+
+/* Special styling for hero section */
+.home-page > section:first-child {
+  background: linear-gradient(
+    135deg,
+    var(--gray-50) 0%,
+    var(--bg-primary) 50%,
+    var(--gray-100) 100%
+  );
+}
+
+/* Section entrance animations */
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to sections when they come into view */
+.home-page section {
+  animation: sectionFadeIn 0.8s ease-out;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .home-page {
-    padding: 0;
+    overflow-x: hidden;
   }
-} 
+}
+
+/* Print styles */
+@media print {
+  .home-page {
+    background: white !important;
+  }
+
+  .home-page > section {
+    background: white !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .home-page > section + section::before {
+    display: none;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .home-page section {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus management for keyboard navigation */
+.home-page section:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 4px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .home-page > section + section::before {
+    background: var(--text-primary);
+    height: 2px;
+  }
+}
