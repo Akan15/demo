@@ -654,6 +654,14 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .video-grid,
+  .checklist-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--space-3xl);
+  }
+}
+
 @media (max-width: 1024px) {
   .video-grid,
   .checklist-grid {
@@ -669,6 +677,65 @@
   .header-icon {
     width: 56px;
     height: 56px;
+  }
+
+  .video-card,
+  .checklist-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .instructions-header {
+    margin-bottom: var(--space-5xl);
+  }
+
+  .video-guides,
+  .checklists-section {
+    margin-bottom: var(--space-6xl);
+  }
+
+  .video-thumbnail {
+    height: 220px;
+  }
+
+  .video-content,
+  .checklist-header {
+    padding: var(--space-2xl);
+  }
+
+  .checklist-steps {
+    padding: var(--space-2xl);
+  }
+
+  .step-item {
+    padding: var(--space-md);
+  }
+
+  .download-card {
+    padding: var(--space-3xl);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .download-content h3 {
+    font-size: var(--text-xl);
+  }
+
+  .download-content p {
+    font-size: var(--text-base);
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 65vh;
+  }
+
+  .close-button {
+    top: -45px;
+    width: 40px;
+    height: 40px;
   }
 }
 
