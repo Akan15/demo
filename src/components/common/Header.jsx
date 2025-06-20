@@ -86,7 +86,7 @@ const Header = () => {
               className="nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t.topServices.title}
+              {t.topServices?.title || "ТОП-услуги"}
             </a>
             <div className="mobile-language-selector">
               <LanguageSelector />
