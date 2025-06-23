@@ -71,15 +71,15 @@
 }
 
 .lang-btn.active {
-  background: transparent;
-  color: #111;
-  box-shadow: var(--shadow-sm);
-  transform: scale(1.02);
+  background: var(--primary-blue);
+  color: #fff !important;
+  box-shadow: var(--shadow-md);
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .lang-btn.active::before {
-  opacity: 1;
-  transform: scale(1);
+  opacity: 0;
 }
 
 /* Mobile Responsive */
