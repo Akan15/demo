@@ -76,10 +76,6 @@
   align-items: center;
   margin: 0 var(--space-3xl);
   transition: all var(--transition-normal);
-  opacity: 0;
-  transform: translateY(-40px);
-  pointer-events: none;
-  transition: opacity 0.45s cubic-bezier(0.4,0,0.2,1), transform 0.45s cubic-bezier(0.4,0,0.2,1);
 }
 
 .nav-link {
@@ -130,7 +126,7 @@
   height: 48px;
   position: relative;
   border-radius: var(--radius-lg);
-  transition: background 0.25s, transform 0.25s;
+  transition: all var(--transition-normal);
 }
 
 .mobile-menu-button:hover {
@@ -146,7 +142,7 @@
   margin: 0 auto;
   position: absolute;
   left: 12px;
-  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  transition: all var(--transition-normal);
   border-radius: var(--radius-sm);
 }
 
@@ -163,16 +159,18 @@
 }
 
 .mobile-menu-button.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(7px);
+  transform: rotate(45deg);
+  top: 23px;
 }
 
 .mobile-menu-button.active span:nth-child(2) {
   opacity: 0;
-  transform: scaleX(0.5);
+  transform: translateX(-10px);
 }
 
 .mobile-menu-button.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-7px);
+  transform: rotate(-45deg);
+  top: 23px;
 }
 
 /* Language Selector Positioning */
@@ -252,12 +250,21 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .nav.active .mobile-menu-close {
+    display: flex;
+  }
   .nav {
-    display: flex !important;
-    flex-direction: column;
+    opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
   }
   .nav.active {
-    display: flex !important;
+    opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
   }
 }
 
@@ -409,18 +416,24 @@ body {
   .mobile-menu-button span:nth-child(3) { top: 30px !important; }
 
   .mobile-menu-close {
-    display: none;
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    width: 36px;
-    height: 36px;
-    background: none;
-    border: none;
-    z-index: 100;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* чтобы была поверх */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: var(--text-inverse);
+  transition: all 0.3s ease;
+  }
+  
+  .mobile-menu-close:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
   }
 
   .mobile-menu-button.active + .mobile-menu-close {
@@ -702,91 +715,4 @@ body.menu-open {
     padding-top: 60px;
     transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
   }
-}
-
-/* Overlay for mobile menu */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.35);
-  z-index: 99;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1);
-}
-.menu-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Mobile Menu Button (burger) - enhance animation */
-.mobile-menu-button {
-  /* ...existing styles... */
-  transition: background 0.25s, transform 0.25s;
-}
-.mobile-menu-button span {
-  /* ...existing styles... */
-  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
-}
-.mobile-menu-button.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(7px);
-}
-.mobile-menu-button.active span:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0.5);
-}
-.mobile-menu-button.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-7px);
-}
-
-/* Mobile menu close (cross) button always visible when menu open */
-.mobile-menu-close {
-  display: flex !important;
-  position: fixed;
-  top: 18px;
-  right: 18px;
-  width: 44px;
-  height: 44px;
-  background: rgba(30, 64, 175, 0.95); /* subtle background for visibility */
-  border: none;
-  z-index: 9999; /* ensure above nav and overlay */
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  border-radius: 50%;
-  transition: opacity 0.3s, background 0.2s;
-}
-.mobile-menu-close.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-.mobile-menu-close svg {
-  width: 32px;
-  height: 32px;
-  stroke: #fff;
-  transition: stroke 0.2s;
-}
-.mobile-menu-close:hover {
-  background: rgba(30, 64, 175, 1);
-}
-.mobile-menu-close:hover svg {
-  stroke: var(--primary-blue-light);
-}
-
-/* Nav transitions (already smooth, but increase duration for more effect) */
-.nav,
-.nav.active {
-  transition: all 0.45s cubic-bezier(0.4,0,0.2,1);
-}
-
-.nav.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }

@@ -53,74 +53,39 @@ const Header = () => {
             <span></span>
             <span></span>
           </button>
-          {/* Overlay for mobile menu */}
-          <div
-            className={`menu-overlay${isMenuOpen ? " active" : ""}`}
-            onClick={() => setIsMenuOpen(false)}
-            aria-hidden="true"
-          ></div>
+          {isMenuOpen && (
+            <button className="mobile-menu-close" onClick={toggleMenu} aria-label="Закрыть меню">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          )}
 
-          <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
-            <a
-              href="#about"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.about}
-            </a>
-            <a
-              href="#products"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.products}
-            </a>
-            <a
-              href="#instructions"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.instructions}
-            </a>
-            <a
-              href="#faq"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.faq}
-            </a>
-            {/* <a href="#team" className="nav-link">{t.team.title}</a> */}
-            <a
-              href="#statistics"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.statistics.title}
-            </a>
-            {/* <a href="#contact" className="nav-link">{t.contact}</a> */}
-            <a
-              href="#top-services"
-              className="nav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t.topServices?.title || "ТОП-услуги"}
-            </a>
-            <div className="mobile-language-selector">
-              <LanguageSelector />
-            </div>
-          </nav>
+<nav className={`nav ${isMenuOpen ? "active" : ""}`}>
+  <button
+    className="mobile-menu-close"
+    onClick={toggleMenu}
+    aria-label="Закрыть меню"
+  >
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  </button>
 
-          {/* Cross button always visible when menu is open, no inline display */}
-          <button
-            className={`mobile-menu-close${isMenuOpen ? " active" : ""}`}
-            onClick={toggleMenu}
-            aria-label="Закрыть меню"
-          >
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
+  {/* Меню-пункты */}
+  <a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.about}</a>
+  <a href="#products" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.products}</a>
+  <a href="#instructions" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.instructions}</a>
+  <a href="#faq" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.faq}</a>
+  <a href="#statistics" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.statistics.title}</a>
+  <a href="#top-services" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.topServices?.title || "ТОП-услуги"}</a>
+
+  <div className="mobile-language-selector">
+    <LanguageSelector />
+  </div>
+</nav>
 
           <div className="desktop-language-selector">
             <LanguageSelector />

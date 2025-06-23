@@ -1,7 +1,7 @@
 /* Modern Language Selector */
 .language-selector {
   display: flex;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-full);
   padding: var(--space-xs);
   backdrop-filter: blur(10px);
@@ -71,15 +71,19 @@
 }
 
 .lang-btn.active {
-  background: var(--primary-blue);
-  color: #fff !important;
-  box-shadow: var(--shadow-md);
+  background: var(--primary-blue-light);
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--primary-blue-light), var(--shadow-sm);
   transform: scale(1.05);
   z-index: 1;
+  border: 2px solid var(--primary-blue-light);
 }
 
-.lang-btn.active::before {
-  opacity: 0;
+.lang-btn:not(.active) {
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  border: none;
+  box-shadow: none;
 }
 
 /* Mobile Responsive */
