@@ -53,14 +53,12 @@ const Header = () => {
             <span></span>
             <span></span>
           </button>
-          {isMenuOpen && (
-            <button className="mobile-menu-close" onClick={toggleMenu} aria-label="Закрыть меню">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-          )}
+          {/* Overlay for mobile menu */}
+          <div
+            className={`menu-overlay${isMenuOpen ? " active" : ""}`}
+            onClick={() => setIsMenuOpen(false)}
+            aria-hidden="true"
+          ></div>
 
           <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
             <a
@@ -111,6 +109,18 @@ const Header = () => {
               <LanguageSelector />
             </div>
           </nav>
+
+          {/* Cross button always visible when menu is open, no inline display */}
+          <button
+            className={`mobile-menu-close${isMenuOpen ? " active" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Закрыть меню"
+          >
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
 
           <div className="desktop-language-selector">
             <LanguageSelector />
