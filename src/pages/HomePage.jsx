@@ -8,6 +8,7 @@ import FaqSection from "../components/sections/FaqSection";
 import ContactSection from "../components/sections/ContactSection";
 import StatisticsSection from "../components/sections/StatisticsSection";
 import TopServicesSection from "../components/sections/TopServicesSection";
+import NewsSection from '../components/sections/NewsSection';
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
       {/* <TeamSection /> */}
       <StatisticsSection />
       <TopServicesSection />
+      <NewsSection />
       <ContactSection />
     </div>
   );

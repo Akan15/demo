@@ -379,7 +379,7 @@
   overflow: hidden;
 }
 
-.faq-question::before {
+/* .faq-question::before {
   content: "";
   position: absolute;
   top: 0;
@@ -393,7 +393,7 @@
   );
   transform: scaleX(0);
   transition: transform var(--transition-normal);
-}
+} */
 
 .faq-item.expanded .faq-question::before {
   transform: scaleX(1);

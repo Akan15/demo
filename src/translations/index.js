@@ -327,6 +327,17 @@ export const translations = {
     aboutValueReliabilityDesc: "Стабильная работа и высокое качество услуг",
     aboutValueInnovationTitle: "Инновации",
     aboutValueInnovationDesc: "Постоянное развитие и внедрение новых технологий",
+
+    newsTitle: 'Новости',
+    news1: 'В мобильном приложении eGov Mobile появились ответы на вопросы о постановке в очередь на жилье',
+    news2: 'Цифровой паспорт для вашего питомца – теперь в eGov Mobile',
+    news3: 'В eGov Mobile появился сервис для проверки утечек персональных данных',
+    news4: 'Признание зарубежных дипломов доступно в мобильном приложении eGov Mobile',
+    news5: 'Сообщить владельцу авто о проблеме теперь можно через eGov Mobile',
+    news6: 'Замена водительского удостоверения доступна в мобильном приложении eGov Mobile',
+    news7: 'Услуга по установлению опеки стала доступна на портале eGov.kz и в мобильном приложении eGov Mobile',
+    news8: 'Справка 073/у теперь доступна в мобильном приложении eGov Mobile',
+    news9: 'Проверить данные о начислениях по программе «НацФонда – детям» могут пользователи портала eGov.kz и приложения eGov Mobile',
   },
   kk: {
     // Navigation
@@ -656,6 +667,17 @@ export const translations = {
     aboutValueReliabilityDesc: "Тұрақты жұмыс және жоғары сапалы қызметтер",
     aboutValueInnovationTitle: "Инновациялар",
     aboutValueInnovationDesc: "Үздіксіз даму және жаңа технологияларды енгізу",
+
+    newsTitle: 'Жаңалықтар',
+    news1: 'eGov Mobile қосымшасында тұрғын үй кезегіне тұру туралы сұрақтарға жауаптар пайда болды',
+    news2: 'Сіздің үй жануарыңызға арналған цифрлық паспорт – енді eGov Mobile-да',
+    news3: 'eGov Mobile-да жеке деректердің таралуын тексеру сервисі пайда болды',
+    news4: 'Шетелдік дипломдарды тану eGov Mobile қосымшасында қолжетімді',
+    news5: 'Автокөлік иесіне мәселе туралы хабарлауды енді eGov Mobile арқылы жасауға болады',
+    news6: 'Жүргізуші куәлігін ауыстыру eGov Mobile қосымшасында қолжетімді',
+    news7: 'Қамқоршылық орнату қызметі eGov.kz порталында және eGov Mobile қосымшасында қолжетімді',
+    news8: '073/у анықтамасы енді eGov Mobile қосымшасында қолжетімді',
+    news9: '«Ұлттық қор – балаларға» бағдарламасы бойынша төлемдерді eGov.kz порталы мен eGov Mobile қосымшасында тексеруге болады',
   },
   en: {
     // Navigation
@@ -984,5 +1006,16 @@ export const translations = {
     aboutValueReliabilityDesc: "Stable operation and high quality of services",
     aboutValueInnovationTitle: "Innovation",
     aboutValueInnovationDesc: "Continuous development and implementation of new technologies",
+
+    newsTitle: 'News',
+    news1: 'Answers to questions about housing queue are now available in the eGov Mobile app',
+    news2: 'Digital passport for your pet – now in eGov Mobile',
+    news3: 'A service for checking personal data leaks is now available in eGov Mobile',
+    news4: 'Recognition of foreign diplomas is now available in the eGov Mobile app',
+    news5: 'You can now notify a car owner about a problem via eGov Mobile',
+    news6: 'Driver\'s license replacement is now available in the eGov Mobile app',
+    news7: 'Custody establishment service is now available on eGov.kz and in the eGov Mobile app',
+    news8: 'Form 073/u is now available in the eGov Mobile app',
+    news9: 'Users of eGov.kz and the eGov Mobile app can now check payments under the "National Fund for Children" program',
   },
 };

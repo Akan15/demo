@@ -45,7 +45,7 @@ const ContactSection = () => {
 
   const validateForm = () => {
     const newErrors = {};
-
+    
     // Name validation (only letters)
     if (!/^[а-яА-Яa-zA-Z\s]+$/.test(formData.name)) {
       newErrors.name = t.nameError;
@@ -72,7 +72,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     if (!validateForm()) {
       return;
     }
@@ -322,10 +322,10 @@ const ContactSection = () => {
                 <p>{t.contactSubtitle}</p>
               </div>
 
-              <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="name">{t.nameLabel}</label>
+          <div className="form-group">
+            <label htmlFor="name">{t.nameLabel}</label>
                     <div className="input-wrapper">
                       <div className="input-icon">
                         <svg
@@ -343,24 +343,24 @@ const ContactSection = () => {
                           />
                         </svg>
                       </div>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
                         className={errors.name ? "error" : ""}
                         placeholder={t.namePlaceholder || t.nameLabel}
-                        required
-                      />
+              required
+            />
                     </div>
                     {errors.name && (
                       <span className="error-message">{errors.name}</span>
                     )}
-                  </div>
+          </div>
 
-                  <div className="form-group">
-                    <label htmlFor="phone">{t.phoneLabel}</label>
+          <div className="form-group">
+            <label htmlFor="phone">{t.phoneLabel}</label>
                     <div className="input-wrapper">
                       <div className="input-icon">
                         <svg
@@ -378,25 +378,25 @@ const ContactSection = () => {
                           />
                         </svg>
                       </div>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
                         className={errors.phone ? "error" : ""}
-                        placeholder={t.phonePlaceholder}
-                        required
-                      />
+              placeholder={t.phonePlaceholder}
+              required
+            />
                     </div>
                     {errors.phone && (
                       <span className="error-message">{errors.phone}</span>
                     )}
                   </div>
-                </div>
+          </div>
 
-                <div className="form-group">
-                  <label htmlFor="iin">{t.iinLabel}</label>
+          <div className="form-group">
+            <label htmlFor="iin">{t.iinLabel}</label>
                   <div className="input-wrapper">
                     <div className="input-icon">
                       <svg
@@ -414,36 +414,36 @@ const ContactSection = () => {
                         />
                       </svg>
                     </div>
-                    <input
-                      type="text"
-                      id="iin"
-                      name="iin"
-                      value={formData.iin}
-                      onChange={handleChange}
+            <input
+              type="text"
+              id="iin"
+              name="iin"
+              value={formData.iin}
+              onChange={handleChange}
                       className={errors.iin ? "error" : ""}
                       placeholder={t.iinPlaceholder || t.iinLabel}
                       maxLength="12"
-                      required
-                    />
+              required
+            />
                   </div>
                   {errors.iin && (
                     <span className="error-message">{errors.iin}</span>
                   )}
-                </div>
+          </div>
 
-                <div className="form-group">
+          <div className="form-group">
                   <label htmlFor="message">
                     {t.messageLabel}
                   </label>
                   <div className="textarea-wrapper">
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
                       className={errors.message ? "error" : ""}
                       placeholder={t.messagePlaceholder || t.messageLabel}
-                      rows="4"
+              rows="4"
                       maxLength="300"
                     />
                     <div className="char-count">
@@ -459,13 +459,13 @@ const ContactSection = () => {
                   {errors.message && (
                     <span className="error-message">{errors.message}</span>
                   )}
-                </div>
+          </div>
 
-                <button
-                  type="submit"
-                  className="submit-button"
-                  disabled={isSubmitting}
-                >
+          <button 
+            type="submit" 
+            className="submit-button"
+            disabled={isSubmitting}
+          >
                   {isSubmitting ? (
                     <>
                       <div className="loading-spinner"></div>
@@ -490,7 +490,7 @@ const ContactSection = () => {
                       {t.sendMessageButton}
                     </>
                   )}
-                </button>
+          </button>
 
                 {submitStatus === "success" && (
                   <div className="success-message">
@@ -530,8 +530,8 @@ const ContactSection = () => {
                     </svg>
                     {t.errorMessage}
                   </div>
-                )}
-              </form>
+          )}
+        </form>
             </div>
           </div>
         </div>
@@ -540,4 +540,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactSection; 

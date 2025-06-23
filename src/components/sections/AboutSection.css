@@ -255,7 +255,7 @@
   position: relative;
 }
 
-.values-title::after {
+/* .values-title::after {
   content: "";
   position: absolute;
   bottom: -var(--space-lg);
@@ -265,7 +265,7 @@
   height: 4px;
   background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
   border-radius: var(--radius-full);
-}
+} */
 
 .values-grid {
   display: grid;

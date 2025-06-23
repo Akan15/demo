@@ -227,7 +227,7 @@ a:hover {
   position: relative;
 }
 
-.section-title::after {
+/* .section-title::after {
   content: "";
   position: absolute;
   bottom: -var(--space-lg);
@@ -241,7 +241,7 @@ a:hover {
     var(--primary-blue-light)
   );
   border-radius: var(--radius-full);
-}
+} */
 
 /* Button Components */
 .btn {

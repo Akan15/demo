@@ -308,70 +308,6 @@
   font-weight: var(--font-medium);
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: var(--space-4xl);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.scroll-arrow {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-full);
-  background: var(--bg-primary);
-  border: 2px solid var(--primary-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-blue);
-  animation: bounce 2s infinite;
-  cursor: pointer;
-  transition: all var(--transition-normal);
-}
-
-.scroll-arrow:hover {
-  background: var(--primary-blue);
-  color: var(--text-inverse);
-  transform: scale(1.1);
-}
-
-/* Animations */
-@keyframes patternFloat {
-  0%,
-  100% {
-    transform: translateX(0) translateY(0);
-  }
-  33% {
-    transform: translateX(20px) translateY(-20px);
-  }
-  66% {
-    transform: translateX(-20px) translateY(20px);
-  }
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  53%,
-  80%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  40%,
-  43% {
-    transform: translate3d(0, -8px, 0);
-  }
-  70% {
-    transform: translate3d(0, -4px, 0);
-  }
-  90% {
-    transform: translate3d(0, -2px, 0);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 1200px) {
   .hero-content {
@@ -571,10 +507,6 @@
 
   .stat-number {
     font-size: var(--text-3xl);
-  }
-
-  .scroll-indicator {
-    bottom: var(--space-2xl);
   }
 }
 
