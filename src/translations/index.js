@@ -58,6 +58,46 @@ export const translations = {
     playMarket: "Play Market",
     learnMore: "Подробнее",
 
+    // Подробные описания продуктов
+    productsDetails: [
+      {
+        title: "eGov Mobile",
+        desc: "Мобильное приложение для физических лиц, предоставляющее доступ к государственным услугам и цифровым сервисам через смартфон. Пользователи могут получать справки, подавать заявления, просматривать цифровые документы, делиться ими, подписывать с помощью QR и использовать биометрическую авторизацию. Интерфейс построен по принципу «единого окна», упрощая доступ к самым востребованным услугам."
+      },
+      {
+        title: "eGov Business",
+        desc: "Мобильное решение для малого и среднего бизнеса, позволяющее юридическим лицам взаимодействовать с государством без визитов в ЦОН. Предоставляет доступ к услугам, цифровым сведениям, профилю организации, лицензиям и QR-подписанию. Обеспечивает быструю авторизацию и выполнение операций прямо с телефона."
+      },
+      {
+        title: "Уведомления",
+        desc: "Функция, позволяющая гражданам получать важную информацию напрямую на смартфон: напоминания, новости, уведомления о новых документах, статусах услуг и персональных событиях. Интерактивный формат подачи информации облегчает контроль за всеми процессами."
+      },
+      {
+        title: "БМГ/СМС шлюз",
+        desc: "База мобильных граждан (БМГ) обеспечивает юридическую значимость идентификации по номеру телефона. СМС-шлюз — это инфраструктура, через которую государственные органы оперативно информируют граждан о событиях, изменениях и действиях, требующих внимания."
+      },
+      {
+        title: "Цифровые документы",
+        desc: "Электронные версии официальных документов, признанные эквивалентом бумажных. Включают удостоверение личности, водительское удостоверение, студенческий билет, пенсионное удостоверение и другие. Документами можно делиться через QR или короткую ссылку без необходимости распечатывать оригинал."
+      },
+      {
+        title: "Государственные услуги",
+        desc: "Полный каталог онлайн-услуг, доступных через приложение: справки, подачи заявлений, оплата пошлин, регистрация, лицензирование и прочее. Услуги сгруппированы по жизненным ситуациям и тематикам, доступны с помощью авторизации и ЭЦП."
+      },
+      {
+        title: "Цифровые сведения",
+        desc: "Сервис, позволяющий предоставлять третьим лицам доступ к личной информации (справкам из медучреждений, прописке, воинской обязанности и др.) без распечатывания. Предоставление осуществляется по запросу через QR, почту или мессенджеры с контролем доступа."
+      },
+      {
+        title: "Опросы",
+        desc: "Инструмент взаимодействия государства с гражданами. Пользователи могут участвовать в общественных обсуждениях, делиться мнением по важным вопросам, помогать в принятии решений, связанных с городским развитием, сервисами или нормативными актами."
+      },
+      {
+        title: "Smart Contract",
+        desc: "Информационная система управления бизнес-правилами, направленная на заключение, хранение договоров в электронном виде с подписанием таких договоров посредством ЭЦП НУЦ РК. В зависимости от типа и вида договора определённые условия контракта исполняются (или обеспечиваются) автоматически. Сервис «Smart contract» представлен на сайте sc.egov.kz и мобильном приложении «eGov mobile»."
+      }
+    ],
+
     // Instructions Section
     instructionsTitle: "Инструкции",
     instructionsSubtitle: "Подробные руководства и пошаговые инструкции для работы с нашими приложениями",
@@ -287,7 +327,7 @@ export const translations = {
     workingHoursTitle: "Время работы",
     workingHoursValue: "Пн-Пт: 9:00 - 18:00",
     addressTitle: "Адрес",
-    addressValue: "г. Нур-Султан, ул. Мангилик Ел, 8",
+    addressValue: "г. Нур-Султан, ул. Мангилик Ел, C2",
     socialTitle: "Социальные сети",
     sendMessageButton: "Отправить сообщение",
     sendMessageTitle: "Отправить сообщение",
@@ -396,6 +436,45 @@ export const translations = {
     appStore: "App Store",
     playMarket: "Play Market",
     learnMore: "Толығырақ",
+
+    productsDetails: [
+      {
+        title: "eGov Mobile",
+        desc: "жеке тұлғаларға арналған мобильді қосымша, мемлекеттік қызметтер мен цифрлық сервистерге смартфон арқылы қол жеткізуге мүмкіндік береді. Пайдаланушылар анықтамалар ала алады, өтініштер бере алады, цифрлық құжаттарды көре алады, олармен бөлісе алады, QR арқылы қол қоя алады және биометриялық авторизацияны пайдалана алады. Интерфейс «бір терезе» қағидаты бойынша құрылған, ең сұранысқа ие қызметтерге қол жеткізуді жеңілдетеді."
+      },
+      {
+        title: "eGov Business",
+        desc: "шағын және орта бизнеске арналған мобильді шешім, заңды тұлғаларға ХҚКО-ға бармай-ақ мемлекетпен өзара әрекеттесуге мүмкіндік береді. Қызметтерге, цифрлық мәліметтерге, ұйым профиліне, лицензияларға және QR-қол қоюға қол жеткізуді қамтамасыз етеді. Операцияларды тікелей телефоннан жылдам авторизациялауға және орындауға мүмкіндік береді."
+      },
+      {
+        title: "Хабарламалар",
+        desc: "азаматтарға маңызды ақпаратты тікелей смартфонға алуға мүмкіндік беретін функция: ескертулер, жаңалықтар, жаңа құжаттар, қызметтер мәртебесі және жеке оқиғалар туралы хабарламалар. Ақпаратты интерактивті түрде ұсыну барлық процестерді бақылауды жеңілдетеді."
+      },
+      {
+        title: "БМГ/СМС шлюз",
+        desc: "Мобильді азаматтар базасы (БМГ) телефон нөмірі бойынша сәйкестендірудің заңды маңыздылығын қамтамасыз етеді. СМС шлюз — мемлекеттік органдар азаматтарды оқиғалар, өзгерістер және назар аударуды қажет ететін әрекеттер туралы жедел хабардар ететін инфрақұрылым."
+      },
+      {
+        title: "Сандық құжаттар",
+        desc: "Ресми құжаттардың электрондық нұсқалары, қағаз құжаттарға теңестірілген. Жеке куәлік, жүргізуші куәлігі, студенттік билет, зейнетақы куәлігі және т.б. құжаттарды қамтиды. Құжаттармен QR немесе қысқа сілтеме арқылы бөлісуге болады, түпнұсқаны басып шығарудың қажеті жоқ."
+      },
+      {
+        title: "Мемлекеттік қызметтер",
+        desc: "Қосымша арқылы қолжетімді онлайн-қызметтердің толық каталогы: анықтамалар, өтініштер беру, баж салығын төлеу, тіркеу, лицензиялау және т.б. Қызметтер өмірлік жағдайлар мен тақырыптар бойынша топтастырылған, авторизация және ЭЦҚ арқылы қолжетімді."
+      },
+      {
+        title: "Сандық мәліметтер",
+        desc: "Үшінші тұлғаларға жеке ақпаратқа (медициналық мекемелерден анықтамалар, тіркеу, әскери міндет және т.б.) басып шығармай-ақ қол жеткізуге мүмкіндік беретін сервис. Қол жеткізу сұраныс бойынша QR, пошта немесе мессенджерлер арқылы беріледі, қол жеткізуді бақылау қамтамасыз етіледі."
+      },
+      {
+        title: "Сауалнамалар",
+        desc: "Мемлекеттің азаматтармен өзара әрекеттесу құралы. Пайдаланушылар қоғамдық талқылауларға қатыса алады, маңызды мәселелер бойынша пікірлерімен бөлісе алады, қаланы дамытуға, сервистерге немесе нормативтік актілерге қатысты шешімдер қабылдауға көмектесе алады."
+      },
+      {
+        title: "Smart Contract",
+        desc: "Бизнес-ережелерді басқару ақпараттық жүйесі, шарттарды электрондық түрде жасасуға, сақтауға және ЭЦҚ НУЦ РК арқылы қол қоюға бағытталған. Шарттың түрі мен түріне байланысты шарттың белгілі бір шарттары автоматты түрде орындалады (немесе қамтамасыз етіледі). «Smart contract» сервисі sc.egov.kz сайтында және «eGov mobile» мобильді қосымшасында ұсынылған."
+      }
+    ],
 
     // Instructions Section
     instructionsTitle: "Нұсқаулар",
@@ -627,7 +706,7 @@ export const translations = {
     workingHoursTitle: "Жұмыс уақыты",
     workingHoursValue: "Дс-Жм: 9:00 - 18:00",
     addressTitle: "Мекенжай",
-    addressValue: "Нұр-Сұлтан қ., Мәңгілік Ел к-сі, 8",
+    addressValue: "Нұр-Сұлтан қ., Мәңгілік Ел к-сі, C2",
     socialTitle: "Әлеуметтік желілер",
     sendMessageButton: "Хабарлама жіберу",
     sendMessageTitle: "Хабарлама жіберу",
@@ -736,6 +815,45 @@ export const translations = {
     appStore: "App Store",
     playMarket: "Play Market",
     learnMore: "Learn More",
+
+    productsDetails: [
+      {
+        title: "eGov Mobile",
+        desc: "is a mobile application for individuals that provides access to government services and digital services via smartphone. Users can obtain certificates, submit applications, view digital documents, share them, sign with QR, and use biometric authentication. The interface is built on a 'single window' principle, simplifying access to the most in-demand services."
+      },
+      {
+        title: "eGov Business",
+        desc: "is a mobile solution for small and medium-sized businesses, allowing legal entities to interact with the government without visiting PSCs. It provides access to services, digital information, organization profiles, licenses, and QR-signing. Ensures quick authorization and operations directly from the phone."
+      },
+      {
+        title: "Notifications",
+        desc: "A feature that allows citizens to receive important information directly on their smartphone: reminders, news, notifications about new documents, service statuses, and personal events. The interactive format makes it easier to keep track of all processes."
+      },
+      {
+        title: "BMC/SMS Gateway",
+        desc: "The Base of Mobile Citizens (BMC) ensures the legal significance of identification by phone number. The SMS gateway is the infrastructure through which government agencies promptly inform citizens about events, changes, and actions requiring attention."
+      },
+      {
+        title: "Digital Documents",
+        desc: "Electronic versions of official documents recognized as equivalent to paper ones. Includes ID card, driver's license, student ID, pension certificate, and others. Documents can be shared via QR or a short link without the need to print the original."
+      },
+      {
+        title: "Government Services",
+        desc: "A complete catalog of online services available through the app: certificates, applications, fee payments, registration, licensing, and more. Services are grouped by life situations and topics, available with authorization and digital signature."
+      },
+      {
+        title: "Digital Information",
+        desc: "A service that allows third parties to access personal information (certificates from medical institutions, registration, military duty, etc.) without printing. Access is provided upon request via QR, email, or messengers with access control."
+      },
+      {
+        title: "Surveys",
+        desc: "A tool for government-citizen interaction. Users can participate in public discussions, share opinions on important issues, and help make decisions related to urban development, services, or regulations."
+      },
+      {
+        title: "Smart Contract",
+        desc: "An information system for managing business rules aimed at concluding and storing contracts electronically, with signing via NCA RK digital signature. Depending on the type and kind of contract, certain conditions are executed (or ensured) automatically. The 'Smart contract' service is available at sc.egov.kz and in the 'eGov mobile' app."
+      }
+    ],
 
     // Instructions Section
     instructionsTitle: "Instructions",
@@ -966,7 +1084,7 @@ export const translations = {
     workingHoursTitle: "Working hours",
     workingHoursValue: "Mon-Fri: 9:00 - 18:00",
     addressTitle: "Address",
-    addressValue: "Nur-Sultan, Mangilik El st., 8",
+    addressValue: "Nur-Sultan, Mangilik El st., C2",
     socialTitle: "Social Networks",
     sendMessageButton: "Send Message",
     sendMessageTitle: "Send Message",

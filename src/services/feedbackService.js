@@ -20,7 +20,7 @@ export const submitFeedback = async (feedbackData) => {
       throw new Error('Failed to submit feedback');
     }
 
-    const result = await response.json();
+    const result = await response.json(); 
     console.log('Success response:', result);
     return result;
   } catch (error) {

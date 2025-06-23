@@ -25,13 +25,6 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      name: t.footer?.telegramBot || "Telegram Бот",
-      logo: telegramBotLogo,
-      url: "https://t.me/egovkz_bot",
-      className: "telegram",
-      description: "Получайте государственные услуги через бот",
-    },
-    {
       name: t.footer?.telegramChannel || "Telegram Канал",
       logo: telegramLogo,
       url: "https://t.me/+yTPUJitjI_w3NjFi",
@@ -331,7 +324,7 @@ const Footer = () => {
               <p className="project-info">
                 {t.footer?.rights || "Студенческий проект, июнь 2025"}
               </p>
-            </div>
+            </div> 
             <div className="footer-links-bottom">
               <a href="#privacy" className="footer-link-bottom">
                 {t.footer?.privacy || "Политика конфиденциальности"}

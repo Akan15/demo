@@ -46,10 +46,8 @@
 .header-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: var(--space-xs) 0;
-  position: relative;
-  min-height: 64px;
+  align-items: center; /* уже есть, оставляем */
+  padding: 14px;
 }
 
 /* Logo Styles */
@@ -188,7 +186,7 @@
 
 /* Add body padding to prevent content hiding */
 body {
-  padding-top: 64px;
+  padding-top: 48px;
 }
 
 /* Responsive Design */
@@ -374,7 +372,7 @@ body {
     align-items: center !important;
     justify-content: space-between !important;
     padding: 0;
-    min-height: 40px;
+    min-height: 48px;
   }
   .logo {
     order: 1 !important;
@@ -446,7 +444,6 @@ body {
     width: 100%;
     margin: 0;
     padding: var(--space-4xl) 0;
-    gap: var(--space-2xl);
     z-index: var(--z-dropdown);
     overflow-y: auto;
     visibility: hidden;
