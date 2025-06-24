@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import './TopServicesSection.css';
+import criminalQR from '../../assets/qr_code/Criminal.png';
+import UAPF from '../../assets/qr_code/ENPF.png'
+import birthCertificate from '../../assets/qr_code/child.png'
+import pension from  '../../assets/qr_code/retire.png'
+import F6 from '../../assets/qr_code/F6.png'
+import legal from '../../assets/qr_code/Law.png'
 
 const TopServicesSection = () => {
   const { t } = useLanguage();
@@ -9,37 +15,37 @@ const TopServicesSection = () => {
     {
       id: 1,
       title: t.topServices.services.criminalRecord,
-      qrCode: '/qr_code/CriminalRecordCertificate.jpg',
+      qrCode: criminalQR,
       icon: '📄'
     },
     {
       id: 2,
       title: t.topServices.services.UAPF,
-      qrCode: '/qr_code/UAPF.jpg',
+      qrCode: pension,
       icon: '💳'
     },
     {
       id: 3,
       title: t.topServices.services.birthCertificates,
-      qrCode: '/qr_code/birthCertificate.jpg',
+      qrCode: birthCertificate,
       icon: '🪪'
     },
     {
       id: 4,
       title: t.topServices.services.pensionCertificates,
-      qrCode: '/qr_code/pensionCertificates.jpg',
+      qrCode: UAPF,
       icon: '📑'
     },
     {
       id: 5,
       title: t.topServices.services.f6Certificate,
-      qrCode: '/qr_code/HelpF-6.jpg',
+      qrCode: F6,
       icon: '🏠'
     },
     {
       id: 6,
       title: t.topServices.services.legalEntityCertificate,
-      qrCode: '/qr_code/certificateOfRegistration.jpg',
+      qrCode: legal,
       icon: '📄'
     }
   ];
