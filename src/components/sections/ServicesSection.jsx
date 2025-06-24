@@ -131,7 +131,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="services-footer">
+        {/* <div className="services-footer">
           <div className="services-cta">
             <h3>Нужна помощь с интеграцией?</h3>
             <p>
@@ -162,7 +162,7 @@ export default function ServicesSection() {
               Связаться с поддержкой
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

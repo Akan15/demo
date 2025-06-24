@@ -66,7 +66,7 @@ export const translations = {
       },
       {
         title: "eGov Business",
-        desc: "Мобильное решение для малого и среднего бизнеса, позволяющее юридическим лицам взаимодействовать с государством без визитов в ЦОН. Предоставляет доступ к услугам, цифровым сведениям, профилю организации, лицензиям и QR-подписанию. Обеспечивает быструю авторизацию и выполнение операций прямо с телефона."
+        desc: "Мобильное решение для малого и среднего бизнеса, позволяющее индивидуальным предпринимателям и юридическим лицам взаимодействовать с государством без визитов в ЦОН. Предоставляет доступ к услугам, профилю организации, лицензиям и QR-подписанию. Обеспечивает быструю авторизацию и выполнение операций прямо с телефона."
       },
       {
         title: "Уведомления",
@@ -78,19 +78,19 @@ export const translations = {
       },
       {
         title: "Цифровые документы",
-        desc: "Электронные версии официальных документов, признанные эквивалентом бумажных. Включают удостоверение личности, водительское удостоверение, студенческий билет, пенсионное удостоверение и другие. Документами можно делиться через QR или короткую ссылку без необходимости распечатывать оригинал."
+        desc: "Электронные версии официальных документов, признанные эквивалентом бумажных. Включают удостоверение личности, водительское удостоверение, студенческий билет, пенсионное удостоверение и другие. Документами можно делиться через QR и короткий код  без необходимости распечатывать оригинал."
       },
       {
         title: "Государственные услуги",
-        desc: "Полный каталог онлайн-услуг, доступных через приложение: справки, подачи заявлений, оплата пошлин, регистрация, лицензирование и прочее. Услуги сгруппированы по жизненным ситуациям и тематикам, доступны с помощью авторизации и ЭЦП."
+        desc: "Полный каталог онлайн-услуг, доступных через приложение: справки, подачи заявлений, оплата пошлин, регистрация, лицензирование и прочее. Услуги сгруппированы по жизненным ситуациям и тематикам, доступны после авторизации в приложении."
       },
       {
         title: "Цифровые сведения",
-        desc: "Сервис, позволяющий предоставлять третьим лицам доступ к личной информации (справкам из медучреждений, прописке, воинской обязанности и др.) без распечатывания. Предоставление осуществляется по запросу через QR, почту или мессенджеры с контролем доступа."
+        desc: "Сервис, позволяющий предоставлять третьим лицам доступ к личной информации (справкам из медучреждений, адресные сведение, воинской службе) без распечатывания. Предоставление осуществляется по запросу через номер телефона и ИИН/БИН."
       },
       {
         title: "Опросы",
-        desc: "Инструмент взаимодействия государства с гражданами. Пользователи могут участвовать в общественных обсуждениях, делиться мнением по важным вопросам, помогать в принятии решений, связанных с городским развитием, сервисами или нормативными актами."
+        desc: "Инструмент взаимодействия государства с гражданами. Пользователи могут высказывать мнение по городскому развитию, услугам и законам, помогая государству принимать обоснованные решения."
       },
       {
         title: "Smart Contract",
@@ -480,6 +480,24 @@ export const translations = {
           desc: 'Сервис предназначен для отправки SMS в рамках оказания государственных услуг с функционалом по передаче статуса о доставке сообщения до гражданина и оказания проактивных услуг. Отправка SMS производится по заранее согласованным шаблонам при помощи передачи его идентификатора.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
         },
+      ]
+    },
+
+    featuresSection: {
+      title: "А вы знали, что теперь можно…",
+      features: [
+        "…получить справку о несудимости, прописке или состоянии здоровья прямо со смартфона — без очередей в ЦОН?",
+        "…показать удостоверение личности, водительские права или диплом в электронном виде — и это будет официально принято?",
+        "…оформить доверенность у нотариуса и получить консультацию не выходя из дома — по видеозвонку?",
+        "…подать обращение в госорган за пару минут через eOtinish — без бумаги, регистрации и визитов?",
+        "…отслеживать налоги и платить их в два клика — прямо из налогового кошелька?",
+        "…выбрать школу, вуз или поликлинику, подать заявление и подписать его ЭЦП — в мобильном приложении?",
+        "…узнать, готова ли цифровая справка, или получить напоминание о новых документах — через push‑уведомления?",
+        "…предоставить доступ к своим сведениям работодателю не распечатывая ни одного листа — достаточно отправить QR‑код?",
+        "…проголосовать за благоустройство своего двора через «Бюджет народного участия»?",
+        "…оформить ЭЦП прямо в приложении — через биометрию и без флешек?",
+        "…присоединиться к Национальному Курултаю, подав предложения и голосуя за инициативы?",
+        "…получить консультацию от ЦОНа по видеосвязи — прямо из телефона?"
       ]
     },
   },
@@ -879,22 +897,22 @@ export const translations = {
       services: [
         {
           title: 'БМГ-де тіркеу сервисі',
-          desc: 'БМГ-де тіркеу және қайта тіркеу үшін арналған сервис.',
+          desc: 'Сервис сыртқы Ақпараттық жүйелер арқылы мобильді азаматтар базасында (БМГ) пайдаланушыларды тіркеуге және қайта тіркеуге(ЖСН-ға байланысты телефон нөмірін ауыстыруға) арналған.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3704'
         },
         {
           title: 'БМГ-де тіркелген телефон нөмірлері туралы мәліметтер сервисі',
-          desc: 'ИИН немесе телефон арқылы БМГ-де тіркелген мәліметтерді алу.',
+          desc: 'Сервис БМГ-да тіркелген пайдаланушының деректерін ұсынады: 1. ЖСН енгізген кезде пайдаланушыны БМГ-ға тіркеуге байланысты телефон нөмірі және басқа да ақпарат беріледі; 2. Телефон нөмірін енгізген кезде ЖСН және пайдаланушыны БМГ-ға тіркеуге байланысты басқа да ақпарат беріледі.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0353'
         },
         {
-          title: 'БМГ-де ИИН мен телефон сәйкестігін тексеру сервисі',
-          desc: 'ИИН мен телефон нөмірінің сәйкестігін тексеру.',
+          title: 'БМГ-де ЖСН мен телефон сәйкестігін тексеру сервисі',
+          desc: 'Сервис енгізілген телефон нөмірінің ЖСН-мен БМГ-ға сәйкестігін тексеруге арналған. Сәйкес болған кезде True нәтижесі басқаша жалған қайтарылады.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-1514'
         },
         {
           title: '1414 SMS жіберу сервисі',
-          desc: '1414 қысқа нөміріне SMS жіберу және проактивті қызметтер.',
+          desc: '1414 қысқа нөмірі бойынша Мемлекеттік қызметтер көрсету шеңберінде SMS-хабарламаларды, оның ішінде проактивті қызметтерді жіберу сервисі. Проактивті қызмет-көрсетілетін қызметті берушінің бастамасы бойынша көрсетілетін қызметті алушының өтінішінсіз көрсетілетін мемлекеттік қызмет. Қызметті алу үшін пайдаланушы хабарламада сипатталған қажетті комбинацияны жауап ретінде жіберуі керек.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0269'
         },
         {
@@ -904,17 +922,17 @@ export const translations = {
         },
         {
           title: '1414-тен SMS-код генерациялау сервисі',
-          desc: 'Бір реттік кодты генерациялау және тексеру.',
+          desc: 'Қызмет қызметтерге авторизация және қол қою кезінде бір реттік кодты жіберуге арналған. Generate — тің екі әдісі бар — ОТП құру үшін және оны тексеру үшін validate.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3484'
         },
         {
           title: 'Цифрлық құжаттарды іздеу сервисі',
-          desc: 'Қысқа код немесе токен арқылы құжатты көру.',
+          desc: 'Сервис азамат құжатының электрондық көшірмесін қысқа код немесе пайдаланушы ұсынған токен арқылы көруге арналған.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0352'
         },
         {
           title: 'OTP арқылы цифрлық құжаттарға қашықтан қолжетімділік сервисі',
-          desc: 'OTP арқылы құжаттарға уақытша қолжетімділік.',
+          desc: 'Сервис сыртқы жүйелердің бағдарламалық қамтамасыз етуінде смс-хабарлама арқылы алынған қысқа кодты енгізу арқылы цифрлық құжаттарға қашықтан қол жеткізуді қамтамасыз етуге арналған. 1. Субъектінің келісімін алғаннан кейін цифрлық құжаттар мемлекеттік және өзге де қызметтерді алу үшін уақытша қарау мақсатында ғана пайдаланылады. 2. Сервисті мақсатынан тыс пайдаланған жағдайда сервис иесінің шешімі бойынша интеграциялық өзара іс-қимылды оператор өшіреді.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3683'
         },
         {
@@ -929,7 +947,7 @@ export const translations = {
         },
         {
           title: 'QR-код арқылы құжат деректерін беру сервисі',
-          desc: 'QR-код арқылы құжат деректерін беру.',
+          desc: 'Сервис QR-код таңбалауышы бойынша құжат туралы мәліметтерді беруге арналған.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0414'
         },
         {
@@ -944,12 +962,12 @@ export const translations = {
         },
         {
           title: 'Push-хабарлама жіберу сервисі',
-          desc: 'eGov Mobile қолданушыларына Push-хабарлама жіберу.',
+          desc: 'Сервис "eGov Mobile"мобильді қосымшасының пайдаланушыларына Push-хабарламалар жіберуге арналған. Жүктелген қосымша болмаған жағдайда жаңа хабарламаның бар екендігі туралы хабарландырумен 1414-тен SMS жолданатын болады.',
           link: 'https://sb.egov.kz/services/passport/MIND-A-7169'
         },
         {
           title: 'Egov Mobile арқылы Push қолтаңба сервисі',
-          desc: 'Egov Mobile арқылы PUSH қолтаңба.',
+          desc: 'Сервис Жеке тұлғаларға арналған "eGov Mobile" мобильді қосымшасына PUSH-хабарламаларды жіберуге арналған.көрсетілген сервиске қосылу үшін алдын ала рұқсат етілген тізімге қол қою және доменді қосу үшін құжаттардың API іске асыру бөлігінде EGOVMOBILE_QR_SIGN_SERVICE сервисімен интеграция жүргізу қажет.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-6655'
         },
         {
@@ -959,9 +977,27 @@ export const translations = {
         },
         {
           title: 'SMS-шлюз 1414 арқылы SMS жіберу сервисі',
-          desc: 'SMS жіберу және жеткізу статусын алу.',
+          desc: 'Сервис азаматқа хабарлама жеткізу және проактивті қызметтер көрсету туралы мәртебені беру жөніндегі функционалы бар мемлекеттік қызметтер көрсету шеңберінде SMS жіберуге арналған. SMS жіберу оның идентификаторын беру арқылы алдын ала келісілген шаблондар бойынша жүргізіледі.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
         },
+      ]
+    },
+
+    featuresSection: {
+      title: "А вы знали, что теперь можно…",
+      features: [
+        "…получить справку о несудимости, прописке или состоянии здоровья прямо со смартфона — без очередей в ЦОН?",
+        "…показать удостоверение личности, водительские права или диплом в электронном виде — и это будет официально принято?",
+        "…оформить доверенность у нотариуса и получить консультацию не выходя из дома — по видеозвонку?",
+        "…подать обращение в госорган за пару минут через eOtinish — без бумаги, регистрации и визитов?",
+        "…отслеживать налоги и платить их в два клика — прямо из налогового кошелька?",
+        "…выбрать школу, вуз или поликлинику, подать заявление и подписать его ЭЦП — в мобильном приложении?",
+        "…узнать, готова ли цифровая справка, или получить напоминание о новых документах — через push‑уведомления?",
+        "…предоставить доступ к своим сведениям работодателю не распечатывая ни одного листа — достаточно отправить QR‑код?",
+        "…проголосовать за благоустройство своего двора через «Бюджет народного участия»?",
+        "…оформить ЭЦП прямо в приложении — через биометрию и без флешек?",
+        "…присоединиться к Национальному Курултаю, подав предложения и голосуя за инициативы?",
+        "…получить консультацию от ЦОНа по видеосвязи — прямо из телефона?"
       ]
     },
   },
@@ -1291,8 +1327,7 @@ export const translations = {
         pensionCertificates:
           "Obtaining a certificate of pension contributions with transfer",
         f6Certificate: "Certificate F-6 (on real estate ownership)",
-        legalEntityCertificate:
-          "Issuance of a certificate of legal entity registration",
+        legalEntityCertificate: "Issuance of a certificate of legal entity registration",
       },
     },
 
@@ -1360,22 +1395,22 @@ export const translations = {
       services: [
         {
           title: 'Service for BMG registration',
-          desc: 'Register or update user in the Base of Mobile Citizens (BMG).',
+          desc: 'The service is designed for registering and re-registering (changing the phone number associated with the IIN) users in the Mobile Citizens Database (MCD) through external information systems.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3704'
         },
         {
           title: 'Service for BMG phone number info',
-          desc: 'Get BMG info by IIN or phone number.',
+          desc: 'The service provides data on a registered user in the BMG: 1. When you enter your IIN, you will receive a phone number and other information related to your registration in the BMG; 2. When you enter your phone number, you will receive your IIN and other information related to your registration in the BMG.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0353'
         },
         {
           title: 'BMG IIN-phone match check',
-          desc: 'Check if phone matches IIN in BMG.',
+          desc: 'The service is designed to check whether the entered phone number matches the IIN in the BMG. If it matches, the result is True; otherwise, it is False.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-1514'
         },
         {
           title: '1414 SMS sending service',
-          desc: 'Send SMS to 1414 for government and proactive services.',
+          desc: 'The service of sending SMS messages as part of the provision of public services by the short number 1414, including proactive services. A proactive service is a public service provided without the service recipient\'s application at the initiative of the service provider. To receive the service, the user needs to send the required combination described in the message in response.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0269'
         },
         {
@@ -1385,17 +1420,17 @@ export const translations = {
         },
         {
           title: '1414 SMS code generation',
-          desc: 'Generate and validate one-time code.',
+          desc: 'The service is designed to send a one-time code when authorizing and signing services. There are two methods: generate, which generates the OTP, and validate, which verifies it.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3484'
         },
         {
           title: 'Digital document search service',
-          desc: 'View document by code or token.',
+          desc: 'The service is designed to view an electronic copy of a citizen\'s document using a short code or a token provided by the user.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-0352'
         },
         {
           title: 'Remote access to digital docs via OTP',
-          desc: 'Temporary access to digital docs via OTP.',
+          desc: 'The service is designed to provide remote access to digital documents by entering a short code received via SMS in the software of external systems. 1. After obtaining the subject\'s consent, digital documents are used exclusively for temporary viewing purposes to obtain public and other services. 2. If the service is used for purposes other than its intended use, the integration interaction will be disabled by the service owner.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-3683'
         },
         {
@@ -1420,17 +1455,17 @@ export const translations = {
         },
         {
           title: 'Notification for GBD FL info',
-          desc: 'Get info from GBD FL system.',
+          desc: 'The service is implemented to obtain information from the State Database of Individuals information system.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-5232'
         },
         {
           title: 'Push notification sending service',
-          desc: 'Send push notifications to eGov Mobile users.',
+          desc: 'The service is designed to send Push notifications to users of the eGov Mobile mobile app. If the app is not downloaded, an SMS from 1414 will be sent with a notification about a new notification.',
           link: 'https://sb.egov.kz/services/passport/MIND-A-7169'
         },
         {
           title: 'Push signing via Egov Mobile',
-          desc: 'Push signing via Egov Mobile app.',
+          desc: 'The service is designed to send PUSH notifications to the eGov Mobile mobile app for individuals. To connect to this service, you must first integrate with the EGOVMOBILE_QR_SIGN_SERVICE service to implement the API for signing documents and adding the domain to the allowed list.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-6655'
         },
         {
@@ -1440,9 +1475,27 @@ export const translations = {
         },
         {
           title: 'SMS sending via 1414 SMS-gateway',
-          desc: 'Send SMS and get delivery status.',
+          desc: 'The service is designed to send SMS as part of the provision of public services with the functionality of transmitting the status of message delivery to the citizen and providing proactive services. SMS is sent according to pre-agreed templates by transmitting its identifier.',
           link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
         },
+      ]
+    },
+
+    featuresSection: {
+      title: "Did you know you can now…",
+      features: [
+        "…get a criminal record certificate, residency certificate, or health certificate directly from your smartphone — without waiting in line at PSC?",
+        "…show your identity card, driver's license, or diploma in electronic form — and it will be officially accepted?",
+        "…get a power of attorney and consultation without leaving home — via video call?",
+        "…submit an application to a government agency in just a few minutes via eOtinish — without paper, registration, or visits?",
+        "…track your taxes and pay them in two clicks — directly from your wallet?",
+        "…choose a school, university, or clinic, submit an application, and sign it with an e-signature — in the mobile app?",
+        "…find out if your digital certificate is ready, or get a reminder about new documents — via push notifications?",
+        "…provide access to your personal information to your employer without printing any sheets — just send a QR code?",
+        "…vote for your neighborhood improvement through the 'People's Budget'?",
+        "…sign an e-signature directly in the app — using biometrics and without flashcards?",
+        "…join the National Assembly, submitting proposals and voting for initiatives?",
+        "…get a consultation from the PSC on video call — directly from your phone?"
       ]
     },
   },

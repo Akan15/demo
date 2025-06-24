@@ -1,13 +1,34 @@
-import React from 'react';
-import TopServicesSection from '../components/sections/TopServicesSection';
-// import other sections as needed
+import React from "react";
+import HeroSection from "../components/sections/HeroSection";
+import AboutSection from "../components/sections/AboutSection";
+import TimelineSection from "../components/sections/TimelineSection";
+import ProductsSection from "../components/sections/ProductsSection";
+import InstructionsSection from "../components/sections/InstructionsSection";
+import FaqSection from "../components/sections/FaqSection";
+import ContactSection from "../components/sections/ContactSection";
+import StatisticsSection from "../components/sections/StatisticsSection";
+import TopServicesSection from "../components/sections/TopServicesSection";
+import FeaturesSection from "../components/sections/FeaturesSection";
+import NewsSection from '../components/sections/NewsSection';
+import ServicesSection from '../components/sections/ServicesSection';
+import "./HomePage.css";
 
 export default function Home() {
   return (
-    <>
-      {/* Add your header, nav, etc. here */}
+    <div className="home-page">
+      <HeroSection />
+      <AboutSection />
+      <TimelineSection />
+      <ProductsSection />
+      <ServicesSection />
+      <InstructionsSection />
+      <FaqSection />
+      {/* <TeamSection /> */}
+      <StatisticsSection />
       <TopServicesSection />
-      {/* Add other sections here */}
-    </>
+      <FeaturesSection />
+      <NewsSection />
+      <ContactSection />
+    </div>
   );
 } 
