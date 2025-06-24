@@ -13,6 +13,36 @@ const TimelineSection = () => {
       description: t.timeline.year2012.description
     },
     {
+      year: '2013',
+      title: t.timeline.year2013.title,
+      description: t.timeline.year2013.description
+    },
+    {
+      year: '2014',
+      title: t.timeline.year2014.title,
+      description: t.timeline.year2014.description
+    },
+    {
+      year: '2015',
+      title: t.timeline.year2015.title,
+      description: t.timeline.year2015.description
+    },
+    {
+      year: '2016',
+      title: t.timeline.year2016.title,
+      description: t.timeline.year2016.description
+    },
+    {
+      year: '2017',
+      title: t.timeline.year2017.title,
+      description: t.timeline.year2017.description
+    },
+    {
+      year: '2018',
+      title: t.timeline.year2018.title,
+      description: t.timeline.year2018.description
+    },
+    {
       year: '2019',
       title: t.timeline.year2019.title,
       description: t.timeline.year2019.description
@@ -41,11 +71,6 @@ const TimelineSection = () => {
       year: '2024',
       title: t.timeline.year2024.title,
       description: t.timeline.year2024.description
-    },
-    {
-      year: '2025',
-      title: t.timeline.year2025.title,
-      description: t.timeline.year2025.description
     }
   ];
 

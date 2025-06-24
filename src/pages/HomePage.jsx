@@ -9,6 +9,7 @@ import ContactSection from "../components/sections/ContactSection";
 import StatisticsSection from "../components/sections/StatisticsSection";
 import TopServicesSection from "../components/sections/TopServicesSection";
 import NewsSection from '../components/sections/NewsSection';
+import ServicesSection from '../components/sections/ServicesSection';
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <AboutSection />
       <TimelineSection />
       <ProductsSection />
+      <ServicesSection />
       <InstructionsSection />
       <FaqSection />
       {/* <TeamSection /> */}

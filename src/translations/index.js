@@ -218,44 +218,57 @@ export const translations = {
       showTimeline: "Показать историю",
       hideTimeline: "Скрыть историю",
       year2012: {
-        title: "Запуск первого мобильного приложения mGov",
-        description:
-          "Прототип мобильного правительства. Основной функционал: получение базовых справок и уведомлений.",
+        title: "2012",
+        description: "Запуск первой версии mGov для iOS и Android.\n Доступны базовые услуги: справки, оплата штрафов и налогов, очередь в ЦОН и ДДО."
+      },
+      year2013: {
+        title: "2013",
+        description: "Расширение до 16 услуг: очередь в детский сад, адресные справки, коммунальные платежи."
+      },
+      year2014: {
+        title: "2014",
+        description: "Более 1 млн использований приложения mGov."
+      },
+      year2015: {
+        title: "2015",
+        description: "В mGov доступно свыше 50 услуг."
+      },
+      year2016: {
+        title: "2016",
+        description: "Расширение до 80+ услуг, добавлена авторизация через ЭЦП."
+      },
+      year2017: {
+        title: "2017",
+        description: "1,6 млн пользователей mGov."
+      },
+      year2018: {
+        title: "2018",
+        description: "Введена авторизация через одноразовый пароль для 13 услуг."
       },
       year2019: {
-        title: "Релиз нового приложения eGov Mobile",
-        description:
-          "Расширенные функции: цифровые документы, интеграция с ЭЦП, push-уведомления. mGov к 2019 году предоставлял около 70 госуслуг. После ребрендинга количество доступных услуг стало превышать 90% госуслуг. Приложение ежемесячно используют более 4 млн человек, ежедневно ~190 000. Компонент Цифровых документов использован более 13 млн раз; ЭЦП через QR – около 9 млн раз.",
+        title: "2019",
+        description: "Запуск eGov Mobile с новым дизайном, ЭЦП, 62 услуги, цифровые документы.\n Опубликовано в Play Market и App Store (октябрь)."
       },
       year2020: {
-        title: "Массовый переход на цифровые госуслуги",
-        description:
-          "Массовый переход на цифровые госуслуги в условиях пандемии. Запуск модуля «Цифровые документы» (удостоверение личности, свидетельства и пр.).",
+        title: "2020",
+        description: "Подключение Huawei AppGallery.\n Реализованы: Kaspi-оплата, выпуск ЭЦП по биометрии, цифровые документы (вод. удостоверение, ПЦР и др.).\n 673 тыс. активных пользователей."
       },
       year2021: {
-        title: "Интеграция с банками и МФО",
-        description: "Запуск бета-версий интеграций с банками и МФО.",
+        title: "2021",
+        description: " Внедрение раздела «Жизненные ситуации».\n Запуск eGov Business.\n Добавление сервисов: eOtinish, е-лицензирование."
       },
       year2022: {
-        title: "Внедрение Face ID и QR-входа",
-        description:
-          "Внедрение Face ID и QR-входа в eGov Mobile. Расширение количества цифровых документов (вод. удостоверение, студенческий билет). Разработка Telegram-бота для связи с пользователями.",
+        title: "2022",
+        description: " Цифровые документы: удостоверение инвалида, паспорт, ВНЖ и др.\n Оценка услуг, видео-ЦОН, социальный кошелек.\n 2,3 млн активных пользователей."
       },
       year2023: {
-        title: "Внедрение сервиса «Распознавание дипломов»",
-        description:
-          "Внедрение сервиса «Распознавание дипломов». Улучшение UX/UI, адаптивность для всех типов устройств. Обновление архитектуры eGov Mobile под микросервисный подход.",
+        title: "2023",
+        description: " Внедрены: 'Цифровые сведения', 'Опросы', улучшен QR-подпись, PUSH-подписание.\n 12,8 млн оказанных услуг, 1,2 млн новых пользователей."
       },
       year2024: {
-        title: "Интеграция с ИИ-платформами",
-        description:
-          "Углубление интеграции с ИИ-платформами (НПИ). Начало работы над визитной страницей ИС МГОВ и Telegram-инфраструктурой. После июля 2024 eGov Business расширил экосистему мобильного правительства, позволив юрлицам эффективно пользовать госуслуги с мобильных устройств.",
-      },
-      year2025: {
-        title: "Разработка новой визитной страницы",
-        description:
-          "Разработка новой визитной страницы. Интеграция сайта с Telegram-ботом. Подача заявок с сайта через API в рамках студенческого проекта.",
-      },
+        title: "2024 (1 полугодие)",
+        description: "– 14 новых услуг и сервисов.\n Реализованы: сервис по ограничению участия в азартных играх, цифровой документ НацФонд-Детям, интеграция с Samsung Wallet.\n 9,1 млн активных пользователей, 67,3 млн оказанных услуг."
+      }
     },
 
     notFound: {
@@ -378,6 +391,97 @@ export const translations = {
     news7: 'Услуга по установлению опеки стала доступна на портале eGov.kz и в мобильном приложении eGov Mobile',
     news8: 'Справка 073/у теперь доступна в мобильном приложении eGov Mobile',
     news9: 'Проверить данные о начислениях по программе «НацФонда – детям» могут пользователи портала eGov.kz и приложения eGov Mobile',
+    servicesSection: {
+      title: "Сервисы",
+      linkText: "Перейти к сервису",
+      services: [
+        {
+          title: 'Сервис для предоставления типа регистрации в БМГ',
+          desc: 'Сервис предназначен для регистрации и перерегистрации (смене номера телефона, привязанного к ИИН-у) пользователей в Базе мобильных граждан(БМГ) посредством внешних информационных систем.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3704'
+        },
+        {
+          title: 'Сервис предоставления сведений по зарегистрированным в БМГ номерам телефонов физических лиц для государственных органов',
+          desc: 'Сервис предоставляет данные зарегистрированного пользователя в БМГ: 1. При вводе ИИН, выдается номер телефона и другая информация, связанная с регистрацией пользователя в БМГ; 2. При вводе номера телефона, выдается ИИН и другая информация, связанная с регистрацией пользователя в БМГ.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0353'
+        },
+        {
+          title: 'Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН+B4',
+          desc: 'Сервис предназначен для проверки соответствия введенного номера телефона с ИИН в БМГ. При соответствии возвращается результат True иначе False.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-1514'
+        },
+        {
+          title: 'Сервис отправки SMS-сообщений по номеру 1414 в рамках оказания государственных услуг',
+          desc: 'Сервис отправки SMS-сообщений в рамках оказания государственных услуг по короткому номеру 1414, в том числе и проактивных услуг. Проактивная услуга - государственная услуга, оказываемая без заявления услугополучателя по инициативе услугодателя. Для получения услуги пользователю необходимо в ответ выслать нужную комбинацию, описанную в сообщении.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0269'
+        },
+        {
+          title: 'Сервис получения отчета о доставке смс до абонента',
+          desc: 'Сервис предназначен для отправки SMS-сообщений и получения статуса доставки СМС до абонента.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-2283'
+        },
+        {
+          title: 'Сервис генерации отправки СМС кода от 1414',
+          desc: 'Сервис предназначен для отправки одноразового кода при авторизации и подписании услуг. Присутствует два метода generate — для генерации ОТП и validate — для его проверки.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3484'
+        },
+        {
+          title: 'Сервис "Цифровые документы" по поиску сгенерированного документа',
+          desc: 'Сервис предназначен для просмотра электронной копии документа гражданина посредством короткого кода либо токена предоставленного пользователем.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0352'
+        },
+        {
+          title: 'Сервис для предоставления удаленного доступа к цифровым документам через ОТП',
+          desc: 'Сервис предназначен для предоставления удаленного доступа к цифровым документам посредством ввода короткого кода полученного через смс-сообщение в программных обеспечениях внешних систем. 1. После получения согласия субъекта, цифровые документы используются исключительно с целью временного просмотра для получения государственных и иных услуг. 2. В случае использования сервиса не по назначению по решению владельца сервиса интеграционное взаимодействие отключается оператором.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3683'
+        },
+        {
+          title: 'Сервис уведомления для Цифровых документов',
+          desc: 'Сервис реализован для получения уведомлений от внешней информационной системы.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-4567'
+        },
+        {
+          title: 'Сервис "Цифровые документы" ',
+          desc: 'Сервис предназначен для просмотра электронной копии цифровых документов посредством ссылки https://m.egov.kz/digilocker-app/documents.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0425'
+        },
+        {
+          title: 'Сервис цифровых документов по передаче сведений о документе по токену QR-кода',
+          desc: 'Сервис предназначен для передачи сведений о документе по токену QR-кода.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0414'
+        },
+        {
+          title: 'Cервис QR подписания посредством приложения Egov Mobile',
+          desc: 'Сервис предназначен для QR подписания посредством приложения Egov Mobile.',
+          link: 'https://sb.egov.kz/services/passport/NITEC-S-5096'
+        },
+        {
+          title: 'Cервис уведомлений для получения сведений от ИС ГБД ФЛ',
+          desc: 'Сервис реализован для получения сведений от информационной системы "Государственная база данных физических лиц".',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-5232'
+        },
+        {
+          title: 'Сервис для приема уведомлений',
+          desc: 'Сервис предназначен для отправки Push-уведомлений пользователям мобильного приложении «eGov Mobile». При отсутствии скаченного приложения будет направлено СМС от 1414 с оповещением о наличии нового уведомления.',
+          link: 'https://sb.egov.kz/services/passport/MIND-A-7169'
+        },
+        {
+          title: 'Cервис Push подписания посредством приложения Egov Mobile',
+          desc: 'Сервис предназначен для отправки PUSH-уведомлений на мобильное приложение «eGov Mobile» для физических лиц. Для подключения к указанному сервису необходимо предварительно провести интеграцию с сервисом EGOVMOBILE_QR_SIGN_SERVICE, в части реализации API документов для подписания и добавления домена в разрешенный список.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-6655'
+        },
+        {
+          title: 'Сервис предназначен для получения информации о портированных абонентских номерах из ЦБДАН',
+          desc: 'Сервис предназначен для получения информации о портированных абонентских номерах из ЦБДАН.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3966'
+        },
+        {
+          title: 'Сервис для отправки SMS от SMS-шлюза 1414 в рамках оказания государственных услуг',
+          desc: 'Сервис предназначен для отправки SMS в рамках оказания государственных услуг с функционалом по передаче статуса о доставке сообщения до гражданина и оказания проактивных услуг. Отправка SMS производится по заранее согласованным шаблонам при помощи передачи его идентификатора.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
+        },
+      ]
+    },
   },
   kk: {
     // Navigation
@@ -596,45 +700,57 @@ export const translations = {
       showTimeline: "Тарихты көрсету",
       hideTimeline: "Тарихты жасыру",
       year2012: {
-        title: "Бірінші mGov мобильді қосымшасын іске қосу",
-        description:
-          "Мобильді үкіметтің прототипі. Негізгі функциялар: негізгі анықтамалар мен хабарламаларды алу.",
+        title: "2012",
+        description: "IOS және Android үшін mGov бірінші нұсқасын іске қосуылы. \n Базалық қызметтер қол жетімді: анықтамалар, айыппұлдар мен салықтарды төлеу, ХҚКО мен ДДҰ кезегі."
+      },
+      year2013: {
+        title: "2013",
+        description: "16 қызметке дейін кеңейту: балабақшаға кезек, мекенжай анықтамалары, коммуналдық төлемдер."
+      },
+      year2014: {
+        title: "2014",
+        description: "MGov қосымшасын 1 миллионнан астам пайдалану."
+      },
+      year2015: {
+        title: "2015",
+        description: "MGov-да 50-ден астам қызмет бар."
+      },
+      year2016: {
+        title: "2016",
+        description: "80+ қызметке дейін кеңейту, ЭЦҚ арқылы авторландыру қосылды."
+      },
+      year2017: {
+        title: "2017",
+        description: "1,6 миллион Mgov пайдаланушысы."
+      },
+      year2018: {
+        title: "2018",
+        description: "13 қызметке бір реттік пароль арқылы авторизация енгізілді."
       },
       year2019: {
-        title: "Жаңа eGov Mobile қосымшасын шығару",
-        description:
-          "Кеңейтілген функциялар: сандық құжаттар, ЭЦҚ интеграциясы, push-хабарламалар. mGov 2019 жылға қарай шамамен 70 мемлекеттік қызметті ұсынды. Ребрендингтен кейін қолжетімді қызметтер саны 90% мемлекеттік қызметтерден асып түсті. Қосымшаны айына 4 миллионнан астам адам, күніне ~190 000 пайдаланады. Сандық құжаттар компоненті 13 миллионнан астам рет қолданылды; QR арқылы ЭЦҚ – шамамен 9 миллион рет.",
+        title: "2019",
+        description: "Жаңа дизайнмен EGOV Mobile іске қосу, ЭЦҚ, 62 қызмет, цифрлық құжаттар.\n Play Market және App Store дүкендерінде жарияланған (қазан)."
       },
       year2020: {
-        title: "Сандық мемлекеттік қызметтерге көпшілік көшу",
-        description:
-          "Пандемия жағдайында сандық мемлекеттік қызметтерге көпшілік көшу. «Сандық құжаттар» модулін іске қосу (жеке куәлік, куәліктер және т.б.).",
+        title: "2020",
+        description: "Huawei AppGallery қосылымы \n іске асырылды: Kaspi-төлем, Биометрия бойынша ЭЦҚ шығару, цифрлық құжаттар (су. куәлік, ПТР және т.б.).\n 673 мың белсенді қолданушы."
       },
       year2021: {
-        title: "Банктер мен ҚҚҚ интеграциясы",
-        description:
-          "Банктер мен ҚҚҚ интеграцияларының бета-нұсқаларын іске қосу.",
+        title: "2021",
+        description: "«Өмірлік жағдайларбөлімін» енгізу.\n eGov Business іске қосу.\n Қызметтерді қосу: eOtinish, e-лицензиялау."
       },
       year2022: {
-        title: "Face ID және QR-кіру енгізу",
-        description:
-          "eGov Mobile-ге Face ID және QR-кіруді енгізу. Сандық құжаттар санын кеңейту (жолық куәлік, студенттік билет). Пайдаланушылармен байланыс үшін Telegram-ботты әзірлеу.",
+        title: "2022",
+        description: "Сандық құжаттар: мүгедек куәлігі, төлқұжат, ТТЖ және т.б.\n  қызметтерді бағалау, бейне-ХҚКО, әлеуметтік әмиян.\n  2,3 миллион белсенді қолданушы."
       },
       year2023: {
-        title: "Implementation of 'Diploma Recognition' service",
-        description:
-          "Implementation of 'Diploma Recognition' service. UX/UI improvements, adaptability for all device types. Update of eGov Mobile architecture to microservice approach.",
+        title: "2023",
+        description: "Енгізілген: 'цифрлық мәліметтер', 'сауалнамалар', жақсартылған QR-қолтаңба, PUSH-қолтаңба.\n 12,8 млн көрсетілген қызметтер, 1,2 млн жаңа пайдаланушылар."
       },
       year2024: {
-        title: "Интеграция с ИИ-платформами",
-        description:
-          "Углубление интеграции с ИИ-платформами (НПИ). Начало работы над визитной страницей ИС МГОВ и Telegram-инфраструктурой. После июля 2024 eGov Business расширил экосистему мобильного правительства, позволив юрлицам эффективно пользовать госуслуги с мобильных устройств.",
-      },
-      year2025: {
-        title: "Разработка новой визитной страницы",
-        description:
-          "Разработка новой визитной страницы. Интеграция сайта с Telegram-ботом. Подача заявок с сайта через API в рамках студенческого проекта.",
-      },
+        title: "2024 (1 жартыжылдық)",
+        description: "14 жаңа қызметтер мен қызметтер.\n  іске асырылды: құмар ойындарға қатысуды шектеу бойынша сервис, Ұлттық қордың цифрлық құжаты-балаларға, Samsung Wallet интеграциясы.\n 9,1 млн белсенді пайдаланушылар, 67,3 млн көрсетілген қызметтер."
+      }
     },
 
     notFound: {
@@ -757,6 +873,97 @@ export const translations = {
     news7: 'Қамқоршылық орнату қызметі eGov.kz порталында және eGov Mobile қосымшасында қолжетімді',
     news8: '073/у анықтамасы енді eGov Mobile қосымшасында қолжетімді',
     news9: '«Ұлттық қор – балаларға» бағдарламасы бойынша төлемдерді eGov.kz порталы мен eGov Mobile қосымшасында тексеруге болады',
+    servicesSection: {
+      title: "Сервистер",
+      linkText: "Сервиске өту",
+      services: [
+        {
+          title: 'БМГ-де тіркеу сервисі',
+          desc: 'БМГ-де тіркеу және қайта тіркеу үшін арналған сервис.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3704'
+        },
+        {
+          title: 'БМГ-де тіркелген телефон нөмірлері туралы мәліметтер сервисі',
+          desc: 'ИИН немесе телефон арқылы БМГ-де тіркелген мәліметтерді алу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0353'
+        },
+        {
+          title: 'БМГ-де ИИН мен телефон сәйкестігін тексеру сервисі',
+          desc: 'ИИН мен телефон нөмірінің сәйкестігін тексеру.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-1514'
+        },
+        {
+          title: '1414 SMS жіберу сервисі',
+          desc: '1414 қысқа нөміріне SMS жіберу және проактивті қызметтер.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0269'
+        },
+        {
+          title: 'SMS жеткізу есебі сервисі',
+          desc: 'SMS жеткізу статусын алу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-2283'
+        },
+        {
+          title: '1414-тен SMS-код генерациялау сервисі',
+          desc: 'Бір реттік кодты генерациялау және тексеру.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3484'
+        },
+        {
+          title: 'Цифрлық құжаттарды іздеу сервисі',
+          desc: 'Қысқа код немесе токен арқылы құжатты көру.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0352'
+        },
+        {
+          title: 'OTP арқылы цифрлық құжаттарға қашықтан қолжетімділік сервисі',
+          desc: 'OTP арқылы құжаттарға уақытша қолжетімділік.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3683'
+        },
+        {
+          title: 'Цифрлық құжаттар үшін хабарлама сервисі',
+          desc: 'Сыртқы жүйеден хабарлама алу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-4567'
+        },
+        {
+          title: 'Цифрлық құжаттарды көру сервисі',
+          desc: 'https://m.egov.kz/digilocker-app/documents арқылы құжаттарды көру.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0425'
+        },
+        {
+          title: 'QR-код арқылы құжат деректерін беру сервисі',
+          desc: 'QR-код арқылы құжат деректерін беру.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0414'
+        },
+        {
+          title: 'Egov Mobile арқылы QR қолтаңба сервисі',
+          desc: 'Egov Mobile арқылы QR қолтаңба.',
+          link: 'https://sb.egov.kz/services/passport/NITEC-S-5096'
+        },
+        {
+          title: 'ЖСН бойынша мәліметтер алу сервисі',
+          desc: 'ГБД ФЛ жүйесінен мәліметтер алу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-5232'
+        },
+        {
+          title: 'Push-хабарлама жіберу сервисі',
+          desc: 'eGov Mobile қолданушыларына Push-хабарлама жіберу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-A-7169'
+        },
+        {
+          title: 'Egov Mobile арқылы Push қолтаңба сервисі',
+          desc: 'Egov Mobile арқылы PUSH қолтаңба.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-6655'
+        },
+        {
+          title: 'Портталған нөмірлер туралы сервис',
+          desc: 'ЦБДАН-нан портталған нөмірлер туралы ақпарат.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3966'
+        },
+        {
+          title: 'SMS-шлюз 1414 арқылы SMS жіберу сервисі',
+          desc: 'SMS жіберу және жеткізу статусын алу.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
+        },
+      ]
+    },
   },
   en: {
     // Navigation
@@ -974,45 +1181,57 @@ export const translations = {
       showTimeline: "Show History",
       hideTimeline: "Hide History",
       year2012: {
-        title: "Launch of first mGov mobile application",
-        description:
-          "Mobile government prototype. Main functionality: receiving basic certificates and notifications.",
+        title: "2012",
+        description: "Launch of the first version of mGov for iOS and Android.\n Basic services available: certificates, payment of fines and taxes, queue in PSC and DDO."
+      },
+      year2013: {
+        title: "2013",
+        description: "Expansion to 16 services: kindergarten queue, address certificates, utility payments."
+      },
+      year2014: {
+        title: "2014",
+        description: "Over 1 million uses of the mGov app."
+      },
+      year2015: {
+        title: "2015",
+        description: "More than 50 services available in mGov."
+      },
+      year2016: {
+        title: "2016",
+        description: "Expanded to 80+ services, added digital signature authorization."
+      },
+      year2017: {
+        title: "2017",
+        description: "1.6 million mGov users."
+      },
+      year2018: {
+        title: "2018",
+        description: "One-time password authorization introduced for 13 services."
       },
       year2019: {
-        title: "Release of new eGov Mobile app",
-        description:
-          "Enhanced features: digital documents, digital signature integration, push notifications. mGov provided about 70 government services by 2019. After rebranding, the number of available services exceeded 90% of government services. The app is used by over 4 million people monthly, ~190,000 daily. Digital Documents component used over 13 million times; digital signature via QR – about 9 million times.",
+        title: "2019",
+        description: "Launch of eGov Mobile with new design, digital signature, 62 services, digital documents.\n Published in Play Market and App Store (October)."
       },
       year2020: {
-        title: "Mass transition to digital government services",
-        description:
-          'Mass transition to digital government services during the pandemic. Launch of "Digital Documents" module (ID card, certificates, etc.).',
+        title: "2020",
+        description: "Huawei AppGallery connection.\n Implemented: Kaspi payment, biometric digital signature issuance, digital documents (driver's license, PCR, etc.).\n 673 thousand active users."
       },
       year2021: {
-        title: "Integration with banks and MFIs",
-        description:
-          "Launch of beta versions of integrations with banks and MFIs.",
+        title: "2021",
+        description: "Introduction of the 'Life Situations' section.\n Launch of eGov Business.\n Added services: eOtinish, e-licensing."
       },
       year2022: {
-        title: "Implementation of Face ID and QR login",
-        description:
-          "Implementation of Face ID and QR login in eGov Mobile. Expansion of digital documents (driver's license, student ID). Development of Telegram bot for user communication.",
+        title: "2022",
+        description: "Digital documents: disability certificate, passport, residence permit, etc.\n Service evaluation, video PSC, social wallet.\n 2.3 million active users."
       },
       year2023: {
-        title: "Implementation of 'Diploma Recognition' service",
-        description:
-          "Implementation of 'Diploma Recognition' service. UX/UI improvements, adaptability for all device types. Update of eGov Mobile architecture to microservice approach.",
+        title: "2023",
+        description: "Implemented: 'Digital Information', 'Surveys', improved QR-signature, PUSH-signing.\n 12.8 million services provided, 1.2 million new users."
       },
       year2024: {
-        title: "Integration with AI platforms",
-        description:
-          "Deepening integration with AI platforms (NPI). Start of work on mGov IS landing page and Telegram infrastructure. After July 2024, eGov Business expanded the mobile government ecosystem, allowing legal entities to efficiently receive government services from mobile devices.",
-      },
-      year2025: {
-        title: "Development of new landing page",
-        description:
-          "Development of new landing page. Integration of the site with Telegram bot. Submission of applications from the site through API as part of a student project.",
-      },
+        title: "2024 (1st half)",
+        description: "14 new services and features.\n Implemented: service for restricting participation in gambling, National Fund for Children digital document, integration with Samsung Wallet.\n 9.1 million active users, 67.3 million services provided."
+      }
     },
 
     notFound: {
@@ -1135,5 +1354,96 @@ export const translations = {
     news7: 'Custody establishment service is now available on eGov.kz and in the eGov Mobile app',
     news8: 'Form 073/u is now available in the eGov Mobile app',
     news9: 'Users of eGov.kz and the eGov Mobile app can now check payments under the "National Fund for Children" program',
+    servicesSection: {
+      title: "Services",
+      linkText: "Go to service",
+      services: [
+        {
+          title: 'Service for BMG registration',
+          desc: 'Register or update user in the Base of Mobile Citizens (BMG).',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3704'
+        },
+        {
+          title: 'Service for BMG phone number info',
+          desc: 'Get BMG info by IIN or phone number.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0353'
+        },
+        {
+          title: 'BMG IIN-phone match check',
+          desc: 'Check if phone matches IIN in BMG.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-1514'
+        },
+        {
+          title: '1414 SMS sending service',
+          desc: 'Send SMS to 1414 for government and proactive services.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0269'
+        },
+        {
+          title: 'SMS delivery report service',
+          desc: 'Get SMS delivery status.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-2283'
+        },
+        {
+          title: '1414 SMS code generation',
+          desc: 'Generate and validate one-time code.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3484'
+        },
+        {
+          title: 'Digital document search service',
+          desc: 'View document by code or token.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0352'
+        },
+        {
+          title: 'Remote access to digital docs via OTP',
+          desc: 'Temporary access to digital docs via OTP.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3683'
+        },
+        {
+          title: 'Notification service for digital docs',
+          desc: 'Receive notifications from external systems.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-4567'
+        },
+        {
+          title: 'View digital docs service',
+          desc: 'View digital docs at https://m.egov.kz/digilocker-app/documents.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0425'
+        },
+        {
+          title: 'QR code doc info transfer',
+          desc: 'Transfer doc info by QR token.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-0414'
+        },
+        {
+          title: 'QR signing via Egov Mobile',
+          desc: 'QR signing via Egov Mobile app.',
+          link: 'https://sb.egov.kz/services/passport/NITEC-S-5096'
+        },
+        {
+          title: 'Notification for GBD FL info',
+          desc: 'Get info from GBD FL system.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-5232'
+        },
+        {
+          title: 'Push notification sending service',
+          desc: 'Send push notifications to eGov Mobile users.',
+          link: 'https://sb.egov.kz/services/passport/MIND-A-7169'
+        },
+        {
+          title: 'Push signing via Egov Mobile',
+          desc: 'Push signing via Egov Mobile app.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-6655'
+        },
+        {
+          title: 'Ported numbers info service',
+          desc: 'Get info about ported numbers from CBDAN.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-3966'
+        },
+        {
+          title: 'SMS sending via 1414 SMS-gateway',
+          desc: 'Send SMS and get delivery status.',
+          link: 'https://sb.egov.kz/services/passport/MIND-S-7582'
+        },
+      ]
+    },
   },
 };
