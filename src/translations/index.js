@@ -73,8 +73,12 @@ export const translations = {
         desc: "Функция, позволяющая гражданам получать важную информацию напрямую на смартфон: напоминания, новости, уведомления о новых документах, статусах услуг и персональных событиях. Интерактивный формат подачи информации облегчает контроль за всеми процессами."
       },
       {
-        title: "БМГ/СМС шлюз",
-        desc: "База мобильных граждан (БМГ) обеспечивает юридическую значимость идентификации по номеру телефона. СМС-шлюз — это инфраструктура, через которую государственные органы оперативно информируют граждан о событиях, изменениях и действиях, требующих внимания."
+        title: "БМГ",
+        desc: "Хранение информации о пользователях, базовой атрибутики, которая может в последующем использоваться в качестве входной информации для реализации бизнес-приложений; - аккумулирование и хранение персональной информации о пользователе «мобильного правительства» для повышения качества оказываемых мобильных электронных услуг; ­- предоставление информации из мобильной базы граждан различным компонентам «мобильного правительства» для реализации бизнес приложений."
+      },
+      {
+        title: "СМС шлюз 1414",
+        desc: "Компонент 'электронного правительства' для отправления и приема SMS-сообщений."
       },
       {
         title: "Цифровые документы",
@@ -393,6 +397,7 @@ export const translations = {
     news9: 'Проверить данные о начислениях по программе «НацФонда – детям» могут пользователи портала eGov.kz и приложения eGov Mobile',
     servicesSection: {
       title: "Сервисы",
+      description: "Откройте для себя широкий спектр цифровых сервисов для граждан и бизнеса",
       linkText: "Перейти к сервису",
       services: [
         {
@@ -573,8 +578,12 @@ export const translations = {
         desc: "азаматтарға маңызды ақпаратты тікелей смартфонға алуға мүмкіндік беретін функция: ескертулер, жаңалықтар, жаңа құжаттар, қызметтер мәртебесі және жеке оқиғалар туралы хабарламалар. Ақпаратты интерактивті түрде ұсыну барлық процестерді бақылауды жеңілдетеді."
       },
       {
-        title: "БМГ/СМС шлюз",
-        desc: "Мобильді азаматтар базасы (БМГ) телефон нөмірі бойынша сәйкестендірудің заңды маңыздылығын қамтамасыз етеді. СМС шлюз — мемлекеттік органдар азаматтарды оқиғалар, өзгерістер және назар аударуды қажет ететін әрекеттер туралы жедел хабардар ететін инфрақұрылым."
+        title: "БМГ",
+        desc: "Пайдаланушылар туралы ақпаратты, кейіннен бизнес-қосымшаларды іске асыру үшін кіріс ақпараты ретінде пайдаланылуы мүмкін базалық атрибутиканы сақтау; - көрсетілетін мобильді электрондық қызметтердің сапасын арттыру үшін  «Мобильдік үкіметтің» пайдаланушысы туралы дербес ақпаратты жинақтау және сақтау; - «мобильдік үкіметтің» әртүрлі компоненттеріне азаматтардың мобильдік базасынан ақпаратты іске асыру үшін ұсыну бизнес қосымшалары."
+      },
+      {
+        title: "CMC-шлюз 1414",
+        desc: "SMS-хабарламаларды жіберу және қабылдау үшін 'электрондық үкімет' компоненті."
       },
       {
         title: "Сандық құжаттар",
@@ -893,6 +902,7 @@ export const translations = {
     news9: '«Ұлттық қор – балаларға» бағдарламасы бойынша төлемдерді eGov.kz порталы мен eGov Mobile қосымшасында тексеруге болады',
     servicesSection: {
       title: "Сервистер",
+      description: "Азаматтар мен бизнеске арналған сандық қызметтердің кең ауқымын ашыңыз",
       linkText: "Сервиске өту",
       services: [
         {
@@ -1073,8 +1083,12 @@ export const translations = {
         desc: "A feature that allows citizens to receive important information directly on their smartphone: reminders, news, notifications about new documents, service statuses, and personal events. The interactive format makes it easier to keep track of all processes."
       },
       {
-        title: "BMC/SMS Gateway",
-        desc: "The Base of Mobile Citizens (BMC) ensures the legal significance of identification by phone number. The SMS gateway is the infrastructure through which government agencies promptly inform citizens about events, changes, and actions requiring attention."
+        title: "BMC",
+        desc: "Storage of user information and basic attributes, which can later be used as input information for the implementation of business applications; accumulation and storage of personal information about the user of the «mobile government» in order to improve the quality of mobile electronic services provided; provision of information from the mobile database of citizens to various components of the «mobile government» for the implementation of business applications."
+      },
+      {
+        title: "SMS Gateway 1414",
+        desc: "An 'e-government' component for sending and receiving SMS messages"
       },
       {
         title: "Digital Documents",
@@ -1391,6 +1405,7 @@ export const translations = {
     news9: 'Users of eGov.kz and the eGov Mobile app can now check payments under the "National Fund for Children" program',
     servicesSection: {
       title: "Services",
+      description: "Discover a wide range of digital services for citizens and businesses",
       linkText: "Go to service",
       services: [
         {

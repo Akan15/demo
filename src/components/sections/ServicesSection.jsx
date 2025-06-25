@@ -39,8 +39,7 @@ export default function ServicesSection() {
             {t.servicesSection.title}
           </h2>
           <p className="section-subtitle animate-fade-in">
-            Откройте для себя широкий спектр цифровых сервисов для граждан и
-            бизнеса
+            {t.servicesSection.description}
           </p>
         </div>
 
