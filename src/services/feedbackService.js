@@ -1,10 +1,9 @@
-const API_URL = 'http://localhost:8080/api';
-
+// Отправка обратной связи
 export const submitFeedback = async (feedbackData) => {
   try {
     console.log('Submitting feedback data:', feedbackData);
-    
-    const response = await fetch(`${API_URL}/feedback`, {
+
+    const response = await fetch('/api/request', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -13,14 +12,14 @@ export const submitFeedback = async (feedbackData) => {
     });
 
     console.log('Response status:', response.status);
-    
+
     if (!response.ok) {
       const errorText = await response.text();
       console.error('Error response:', errorText);
       throw new Error('Failed to submit feedback');
     }
 
-    const result = await response.json(); 
+    const result = await response.text(); // backend возвращает текст, не JSON
     console.log('Success response:', result);
     return result;
   } catch (error) {
@@ -29,10 +28,11 @@ export const submitFeedback = async (feedbackData) => {
   }
 };
 
+// Получение списка обратной связи (если реализовано на backend)
 export const getFeedback = async () => {
   try {
-    const response = await fetch(`${API_URL}/feedback/list`);
-    
+    const response = await fetch('/api/feedback/list');
+
     if (!response.ok) {
       throw new Error('Failed to fetch feedback');
     }
@@ -42,4 +42,4 @@ export const getFeedback = async () => {
     console.error('Error fetching feedback:', error);
     throw error;
   }
-}; 
+};
